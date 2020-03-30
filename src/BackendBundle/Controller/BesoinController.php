@@ -52,7 +52,7 @@ class BesoinController extends Controller
         $em= $this->getDoctrine()->getManager();
         $em->persist($besoin);
         $em->flush();
-        $this->addFlash('success', 'Votre commande est confirmer et un mail a été envoyé');
+        $this->addFlash('passage', 'Ajouter les produits de besoin');
 
         return $this->redirect($this->generateUrl('step2',array('id' => $besoin->getId())));
 
@@ -97,6 +97,8 @@ class BesoinController extends Controller
         $prodbesoins= $this->getDoctrine()->getRepository(Prodbesoin::class)
             ->findBy(array('besoin'=>$besoin));
         $products=$this->getDoctrine()->getRepository(Product::class)->findAll();
+        $this->addFlash('success', 'Produit ajouter au besoin avec sucess');
+
         return $this->render('@Backend/Besoin/createTwo.html.twig',array('id'=>$id_besoin,'products'=>$products,'prodbesoins'=>$prodbesoins));
     }
     public function deleteProdBesoinAction($id,$idb){

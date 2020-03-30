@@ -15,6 +15,36 @@
 
 
         </div>
+        <div class="row">
+            <div class="col-xs-6">
+                {% for message in app.flashes('passage') %}
+                    <div class="alert alert-primary">
+                        <h4 class="alert-heading">Well done!</h4>
+
+                        {{ message }}
+                        <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                        </button>
+                    </div>
+                {% endfor %}
+            </div>
+
+        </div>
+        <div class="row">
+            <div class="col-xs-6">
+                {% for message in app.flashes('success') %}
+                    <div class="alert alert-success">
+                        <h4 class="alert-heading">Well done!</h4>
+
+                        {{ message }}
+                        <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                        </button>
+                    </div>
+                {% endfor %}
+            </div>
+
+        </div>
         <div>
             <form action="{{ path('add_besoin_product') }}" method="post">
                 <input type="text" name="besoin" id="besoin" class="input-hidden" value="{{ id }}" />
@@ -77,6 +107,9 @@
                 </table>
 
             </div>
+            {% if prodbesoins is not empty %}
+                <a href="{{ path('index_besoins') }}" class="btn btn-warning">Consulter les besoins</a>
+            {% endif %}
         </div>
     </div>
 

@@ -12,9 +12,9 @@
 
         {% for b in besoins %}
             <tr>
-                <td>{{ b.reference }}</td>
-                <td>{{ b.echeance|date }}</td>
-                <td>{{ b.entrepot.address }}</td>
+                <td style="color: white;">{{ b.reference }}</td>
+                <td style="color: white;">{{ b.echeance|date }}</td>
+                <td style="color: white;">{{ b.entrepot.address }}</td>
                 <td><a href="{{ path('read_besoin',{'id':b.id}) }}" class="btn btn-warning"><i class="fa fa-info"></i></a></td>
                 <td><a href="{{ path('delete_besoin',{'id':b.id}) }}" class="btn btn-danger "><i class="fa fa-times"></i></a></td>
                 <td><a href="{{ path('edit_besoin',{'id':b.id}) }}" class="btn btn-default"><i class="fa fa-pencil"></i></a></td>
@@ -23,6 +23,6 @@
         {% endfor %}
     </table>
     <br>
-    <a href="{{ path('backend_besoin_createOne') }}">Ajouter votre besoin</a>
+    <a href="{{ path('backend_besoin_createOne') }}" class="btn btn-warning">Ajouter votre besoin <i class="fa fa-plus"></i></a>
 
 {% endblock %}
