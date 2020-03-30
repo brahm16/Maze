@@ -52,6 +52,8 @@ class BesoinController extends Controller
         $em= $this->getDoctrine()->getManager();
         $em->persist($besoin);
         $em->flush();
+        $this->addFlash('success', 'Votre commande est confirmer et un mail a été envoyé');
+
         return $this->redirect($this->generateUrl('step2',array('id' => $besoin->getId())));
 
     }

@@ -1,7 +1,22 @@
 {% extends 'AgentGestionnaire.html.twig' %}
 
 {% block body %}
-    <h1 style="color:#ffffff">Fournisseurs list</h1>
+    <h1 style="color:#ffffff; margin-top: 5%;">Fournisseurs list</h1>
+    <div class="row">
+        <div class="col-xs-6">
+            {% for message in app.flashes('success') %}
+                <div class="alert alert-success">
+                    <h4 class="alert-heading">Well done!</h4>
+
+                    {{ message }}
+                    <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+            {% endfor %}
+        </div>
+
+    </div>
 
     <table style="border-color:#ffffff"class="table table-hover table-bordered" id="dataTables-example">
 

@@ -5,6 +5,8 @@ namespace BackendBundle\Controller;
 use BackendBundle\Entity\Fournisseur;
 use Symfony\Bundle\FrameworkBundle\Controller\Controller;
 use Symfony\Component\HttpFoundation\Request;
+use Symfony\Component\HttpFoundation\Response;
+
 
 /**
  * Fournisseur controller.
@@ -19,13 +21,14 @@ class FournisseurController extends Controller
     public function indexAction()
     {
 
-        $em = $this->getDoctrine()->getManager();
+            $em = $this->getDoctrine()->getManager();
 
-        $fournisseurs = $em->getRepository('BackendBundle:Fournisseur')->findAll();
+            $fournisseurs = $em->getRepository('BackendBundle:Fournisseur')->findAll();
 
-        return $this->render('fournisseur/index.html.twig', array(
-            'fournisseurs' => $fournisseurs,
-        ));
+            return $this->render('fournisseur/index.html.twig', array(
+                'fournisseurs' => $fournisseurs,
+            ));
+
 
     }
 
@@ -43,8 +46,10 @@ class FournisseurController extends Controller
             $em = $this->getDoctrine()->getManager();
             $em->persist($fournisseur);
             $em->flush();
+            $this->addFlash('success', 'Fournisseur ajouté avec succes ');
 
-            return $this->redirectToRoute('fournisseur_show', array('id' => $fournisseur->getId()));
+
+            return $this->redirectToRoute('fournisseur_index');
         }
 
         return $this->render('fournisseur/new.html.twig', array(
@@ -78,7 +83,9 @@ class FournisseurController extends Controller
         $editForm->handleRequest($request);
         if ($editForm->isSubmitted() && $editForm->isValid()) {
             $this->getDoctrine()->getManager()->flush();
-            return $this->redirectToRoute('fournisseur_edit', array('id' => $fournisseur->getId()));
+            $this->addFlash('success', 'Fournisseur edit avec succes ');
+
+            return $this->redirectToRoute('fournisseur_index');
         }
 
         return $this->render('fournisseur/edit.html.twig', array(
@@ -101,7 +108,9 @@ class FournisseurController extends Controller
             $em = $this->getDoctrine()->getManager();
             $em->remove($fournisseur);
             $em->flush();
+
         }
+        $this->addFlash('success', 'Fournisseur supprimer avec succes ');
 
         return $this->redirectToRoute('fournisseur_index');
     }

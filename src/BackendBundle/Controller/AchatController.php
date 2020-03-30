@@ -171,6 +171,7 @@ class AchatController extends Controller
             $em->persist($prodachat);
             $em->flush();
         }
+        $this->addFlash('success', 'Product ajouter au panier');
 
         return $this->redirectToRoute("index_achat");
 
@@ -189,9 +190,15 @@ class AchatController extends Controller
     public function deleteAction($id){
         $em = $this->getDoctrine()->getManager();
         $prodachat=$em->getRepository(ProdAchat::class)->find($id);
+        $user=$this->getUser();
+        $achat=$this->getDoctrine()->getRepository(Achat::class)->findOneBy(array('clientAddress'=>$user->getUsername(),'etat'=>0));
+        $achat->setQuantite($achat->getQuantite()-$prodachat->getQte());
+        $em->persist($achat);
 
         $em->remove($prodachat);
         $em->flush();
+        $this->addFlash('success', 'Product deleted from basket');
+
         return $this->redirectToRoute("panier_achat");
     }
     public function editAction($id,Request $request){
@@ -202,6 +209,7 @@ class AchatController extends Controller
             $em=$this->getDoctrine()->getManager();
             $em->persist($prodachat);
             $em->flush();
+            $this->addFlash('success', 'Quantity Product updated successfully');
             return $this->redirectToRoute("panier_achat");
         }
         return $this->render("@Backend/Achat/edit.html.twig",array(
@@ -227,6 +235,7 @@ class AchatController extends Controller
                 'text/html'
             );
         $this->get('mailer')->send($message);
+        $this->addFlash('success', 'Votre commande est confirmer et un mail a été envoyé');
 
         return $this->redirectToRoute("index_achat");
     }

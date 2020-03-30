@@ -40,8 +40,8 @@ class FournisseurType extends AbstractType
 
             ->add('address',TextType::class,array('attr' => array('class' => 'form-control'),'constraints' => array(
                 new NotBlank(),
-                new Length(array('min' =>4)),
-                new Length(array('max' => 20)),
+                new Length(array('min' =>8)),
+                new Length(array('max' => 100)),
             )))
 
             ->add('email',EmailType::class,array('attr' => array('class' => 'form-control'), 'constraints' => array(
