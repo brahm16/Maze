@@ -139,6 +139,12 @@ pdf_generate:
 pdf_generate_achat:
     path: /achat/pdf/{id}
     defaults: { _controller: BackendBundle:Achat:pdf}
+add_note:
+    path: /note/add
+    defaults: { _controller: BackendBundle:Achat:addNote}
+delete_note:
+    path: /note/delete/{id}
+    defaults: { _controller: BackendBundle:Achat:deleteNote}
 add_cmd:
     path: /cmd/add
     defaults: { _controller: BackendBundle:Commande:addCmd}

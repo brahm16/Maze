@@ -3,6 +3,7 @@
 namespace BackendBundle\Controller;
 
 use BackendBundle\Entity\Achat;
+use BackendBundle\Entity\Note;
 use BackendBundle\Entity\ProdAchat;
 use BackendBundle\Entity\Product;
 use BackendBundle\Form\ProdAchatType;
@@ -142,8 +143,13 @@ class AchatController extends Controller
 
     }
     public function detailsProduitAction($id){
+        $user=$this->getUser();
         $product=$this->getDoctrine()->getRepository(Product::class)->find($id);
-        return $this->render('@Backend/Achat/show.html.twig',array('product'=>$product));
+        $note=$this->getDoctrine()->getRepository(Note::class)->findOneBy(array("product"=>$product,"client"=>$user->getUsername()));
+        $valeur=0;
+        if($note)
+            $valeur=$note->getValeur();
+        return $this->render('@Backend/Achat/show.html.twig',array('product'=>$product,'valeur'=>$valeur));
 
 
     }
@@ -252,6 +258,49 @@ class AchatController extends Controller
             'commandes'=>$commandes,
 
         ));
+
+    }
+    public function addNoteAction(Request $request){
+        $em=$this->getDoctrine()->getManager();
+        $user=$this->getUser();
+        $note=new Note();
+        $valeur=$request->request->get("rate");
+        $id=$request->request->get("p");
+        $product=$this->getDoctrine()->getRepository(Product::class)->find((int)$id);
+        $note=$this->getDoctrine()->getRepository(Note::class)->findOneBy(array("product"=>$product));
+        if($note){
+            $note->setEtat(1);
+            $note->setValeur((int)$valeur);
+            $note->setDateEdit(new \DateTime('now'));
+            $em->flush();
+
+
+        }
+        else{
+            $note=new Note();
+            $note->setEtat(0);
+            $note->setValeur((int)$valeur);
+            $note->setProduct($product);
+            $note->setClient($user->getUsername());
+            $note->setDateNote( new \DateTime('now') );
+            $note->setDateEdit(new \DateTime('now'));
+            $em->persist($note);
+            $em->flush();
+        }
+
+
+        return $this->redirect($this->generateUrl('index_achat_show',array('id' => $id)));
+
+    }
+    public function deleteNoteAction($id){
+        $em=$this->getDoctrine()->getManager();
+        $user=$this->getUser();
+        $product=$this->getDoctrine()->getRepository(Note::class)->find((int)$id);
+        $note=$this->getDoctrine()->getRepository(Note::class)->findOneBy(array("product"=>$product,"client"=>$user->getUsername()));
+        $em->remove($note);
+        $em->flush();
+        return $this->redirect($this->generateUrl('index_achat_show',array('id' => $id)));
+
 
     }
 }
