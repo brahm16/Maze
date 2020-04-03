@@ -1,8 +1,11 @@
 {% extends 'Client.html.twig' %}
 {% block body %}
     <h1 style="color: white; margin-top: 5%;" >Mes commandes</h1>
+    <br>
+    <br>
 {% for c  in commandes %}
-    {{ c[0].achat.clientType }}
+    <h4 style="color: white;">{{ c[0].achat.clientType }}</h4>
+    <br>
     <table class="table table-hover table-bordered" id="dataTables-example">
         <tr>
             <th style="color: white;">Product Name</th>
