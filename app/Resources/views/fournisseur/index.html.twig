@@ -1,60 +1,66 @@
 {% extends 'AgentGestionnaire.html.twig' %}
 
 {% block body %}
-    <h1 style="color:#ffffff; margin-top: 5%;">Fournisseurs list</h1>
-    <div class="row">
-        <div class="col-xs-6">
-            {% for message in app.flashes('success') %}
-                <div class="alert alert-success">
-                    <h4 class="alert-heading">Well done!</h4>
+    <div class="card" >
+        <div class="card-body">
+            <h3 class="card-title">Fournisseurs liste</h3>
+            <div class="row">
+                <div class="col-xs-6">
+                    {% for message in app.flashes('success') %}
+                        <div class="alert alert-success">
+                            <h4 class="alert-heading">Well done!</h4>
 
-                    {{ message }}
-                    <button type="button" class="close" data-dismiss="alert" aria-label="Close">
-                        <span aria-hidden="true">&times;</span>
-                    </button>
+                            {{ message }}
+                            <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+                                <span aria-hidden="true">&times;</span>
+                            </button>
+                        </div>
+                    {% endfor %}
                 </div>
-            {% endfor %}
-        </div>
 
-    </div>
+            </div>
 
-    <table style="border-color:#ffffff"class="table table-hover table-bordered" id="dataTables-example">
+            <table style="border-color:#ffffff"class="table table-hover table-bordered" id="dataTables-example">
 
-    <thead>
-            <tr>
-                <th style="color:#ffffff">Id</th>
-                <th style="color:#ffffff">Firstname</th>
-                <th style="color:#ffffff">Lastname</th>
-                <th style="color:#ffffff">Phonenumber</th>
-                <th style="color:#ffffff">Address</th>
-                <th style="color:#ffffff">Email</th>
-                <th style="color:#ffffff">Actions</th>
-            </tr>
-        </thead>
-        <tbody>
-        {% for fournisseur in fournisseurs %}
-            <tr>
-                <td style="color:#ffffff"><a href="{{ path('fournisseur_show', { 'id': fournisseur.id }) }}">{{ fournisseur.id }}</a></td>
-                <td style="color:#ffffff">{{ fournisseur.firstname }}</td>
-                <td style="color:#ffffff">{{ fournisseur.lastname }}</td>
-                <td style="color:#ffffff">{{ fournisseur.phoneNumber }}</td>
-                <td style="color:#ffffff">{{ fournisseur.address }}</td>
-                <td style="color:#ffffff">{{ fournisseur.email }}</td>
-                <td style="color:#ffffff">
+                <thead>
+                <tr>
+                    <th >Id</th>
+                    <th >Firstname</th>
+                    <th>Lastname</th>
+                    <th >Phonenumber</th>
+                    <th >Address</th>
+                    <th >Email</th>
+                    <th >Actions</th>
+                </tr>
+                </thead>
+                <tbody>
+                {% for fournisseur in fournisseurs %}
+                    <tr>
+                        <td ><a href="{{ path('fournisseur_show', { 'id': fournisseur.id }) }}">{{ fournisseur.id }}</a></td>
+                        <td >{{ fournisseur.firstname }}</td>
+                        <td>{{ fournisseur.lastname }}</td>
+                        <td >{{ fournisseur.phoneNumber }}</td>
+                        <td >{{ fournisseur.address }}</td>
+                        <td >{{ fournisseur.email }}</td>
+                        <td >
 
                             <a href="{{ path('fournisseur_show', { 'id': fournisseur.id }) }}" class="btn btn-primary">show</a>
-                    |
+                            |
                             <a href="{{ path('fournisseur_edit', { 'id': fournisseur.id }) }}" class="btn btn-warning">edit</a>
 
-                </td>
-            </tr>
-        {% endfor %}
-        </tbody>
-    </table>
+                        </td>
+                    </tr>
+                {% endfor %}
+                </tbody>
+            </table>
 
-    <ul>
-        <li>
-            <a href="{{ path('fournisseur_new') }}" class="btn btn-warning">Create a new fournisseur</a>
-        </li>
-    </ul>
+            <ul>
+                <li>
+                    <a href="{{ path('fournisseur_new') }}" class="btn btn-warning">Create a new fournisseur</a>
+                </li>
+            </ul>
+
+        </div>
+    </div>
+
 {% endblock %}

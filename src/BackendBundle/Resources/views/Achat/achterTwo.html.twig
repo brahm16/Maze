@@ -1,0 +1,113 @@
+{% extends 'AgentGestionnaire.html.twig' %}
+
+{% block body %}
+    <div class="container">
+        <div class="row justify-content-center">
+            <div class="col ">
+                <div class="progressbar-wrapper">
+                    <ul class="progressbar">
+                        <li >Step 1</li>
+                        <li class="active">Step 2</li>
+                    </ul>
+                </div>
+
+            </div>
+
+
+
+        </div>
+        <div class="row">
+            <div class="col-xs-6">
+                {% for message in app.flashes('success') %}
+                    <div class="alert alert-success">
+                        <h4 class="alert-heading">Well done!</h4>
+
+                        {{ message }}
+                        <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                        </button>
+                    </div>
+                {% endfor %}
+            </div>
+
+        </div>
+        <div>
+            <div class="card" >
+                <div class="card-body">
+                    <form action="{{ path('achat_achter_two',{'f':f }) }}" method="post">
+
+
+
+                        <div class="form-group field-entrepots">
+
+                            {{ form_widget(form.product,{'attr':{'class':'form-control'}}) }}
+
+
+
+                        </div>
+                        <div class="form-group field-entrepots">
+
+                            {{ form_widget(form.qte) }}
+
+
+
+                        </div>
+
+
+
+
+                        <div class="form-group field-entrepots">
+
+                            <button type="submit" class="btn btn-primary btn-block">Ajouter Produit <i class="fa fa-plus"></i></button>
+
+
+                        </div>
+
+
+                    </form>
+                </div>
+            </div>
+            <div>
+                <div class="card" >
+                    <div class="card-body">
+                        <h6 class="card-title">List des Produits</h6>
+                        <table class="table table-hover table-bordered" id="dataTables-example">
+                            <th>#</th>
+                            <th >Produit</th>
+                            <th >Quantite</th>
+                            <th >Delete</th>
+
+
+                            {% for p in prodachats %}
+                                <tr>
+                                    <td><img src="{{ asset('uploads/post/'~p.product.photo) }}" style="height: 4rem; width: 4rem;"></td>
+                                    <td >{{ p.product.productName }}</td>
+                                    <td>{{ p.qte }}</td>
+                                    <td ><a href="{{ path('achat_acheter_delete',{'id':p.id}) }}" class="btn btn-danger">Supprimer</a></td>
+
+                                </tr>
+                            {% else %}
+                                <p >Pas de produit</p>
+                            {% endfor %}
+
+                        </table>
+                        {% if prodachats is not empty %}
+                            <a href="{{ path('achat_acheter_confirm') }}" class="btn btn-warning">Confirmer </a>
+                        {% endif %}
+                    </div>
+                </div>
+
+
+            </div>
+
+        </div>
+    </div>
+
+    </div>
+
+
+    <!-- Horizontal Steppers -->
+
+
+
+{% endblock %}

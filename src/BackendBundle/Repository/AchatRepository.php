@@ -10,4 +10,16 @@ namespace BackendBundle\Repository;
  */
 class AchatRepository extends \Doctrine\ORM\EntityRepository
 {
+    public function findByDateParametre($date,$etat,$client){
+        $query=$this->getEntityManager()
+            ->createQuery("SELECT m FROM BackendBundle:Achat m where m.date LIKE :d AND m.etat=:e AND m.clientName=:c")
+            ->setParameter('d',$date."%")
+        ->setParameter('e',$etat)
+        ->setParameter('c',$client);
+
+
+        return $query->getResult();
+
+
+    }
 }

@@ -1,40 +1,45 @@
 {% extends 'AgentGestionnaire.html.twig' %}
 
 {% block body %}
-    <h1 style="color: #ffffff">Fournisseur edit</h1>
+    <div class="card" >
+        <div class="card-body">
+            <h3 class="card-title">Fournisseur edit</h3>
+            {{ form_start(edit_form) }}
+            {{ form_start(edit_form) }}
+            {{ form_widget(edit_form.firstname,{'attr':{'type':'text','class':'form-control','placeholder':'Firstname...'}}) }}
+            <br> <br> <br>
+            {{ form_widget(edit_form.lastname,{'attr':{'type':'text','class':'form-control','placeholder':'Lastname...'}}) }}
+            <br> <br> <br>
+            {{ form_widget(edit_form.phoneNumber,{'attr':{'type':'text','class':'form-control','placeholder':'PhoneNumber...'}}) }}
+            <br> <br> <br>
+            {{ form_widget(edit_form.address,{'attr':{'type':'text','class':'form-control','placeholder':'Address...'}}) }}
+            <br> <br> <br>
+            {{ form_widget(edit_form.email,{'attr':{'type':'text','class':'form-control','placeholder':'Emmail...'}}) }}
+            <br> <br> <br>
+            <br>
+            <table class="table">
+                <tr>
+                    <td><input type="submit" value="Edit" class="btn btn-primary" /></td>
 
-    {{ form_start(edit_form) }}
-    {{ form_start(edit_form) }}
-    {{ form_widget(edit_form.firstname,{'attr':{'type':'text','class':'form-control','placeholder':'Firstname...'}}) }}
-    <br> <br> <br>
-    {{ form_widget(edit_form.lastname,{'attr':{'type':'text','class':'form-control','placeholder':'Lastname...'}}) }}
-    <br> <br> <br>
-    {{ form_widget(edit_form.phoneNumber,{'attr':{'type':'text','class':'form-control','placeholder':'PhoneNumber...'}}) }}
-    <br> <br> <br>
-    {{ form_widget(edit_form.address,{'attr':{'type':'text','class':'form-control','placeholder':'Address...'}}) }}
-    <br> <br> <br>
-    {{ form_widget(edit_form.email,{'attr':{'type':'text','class':'form-control','placeholder':'Emmail...'}}) }}
-    <br> <br> <br>
-        <br>
-      <table class="table">
-          <tr>
-              <td><input type="submit" value="Edit" class="btn btn-primary" /></td>
+                </tr>
 
-          </tr>
+            </table>
 
-      </table>
+            {{ form_end(edit_form) }}
+            <br>
+            <br>
+            <table>
+                <tr>
+                    <td> {{ form_start(delete_form) }}
+                        <input type="submit" class="btn btn-danger" value="Delete">
+                        {{ form_end(delete_form) }}</td>
+                    <td><a href="{{ path('fournisseur_index') }}" class="btn btn-default">Back to the list</a></td>
+                </tr>
+            </table>
+        </div>
+    </div>
 
-    {{ form_end(edit_form) }}
-    <br>
-    <br>
-    <table>
-        <tr>
-            <td> {{ form_start(delete_form) }}
-                <input type="submit" class="btn btn-danger" value="Delete">
-                {{ form_end(delete_form) }}</td>
-            <td><a href="{{ path('fournisseur_index') }}" class="btn btn-default">Back to the list</a></td>
-        </tr>
-    </table>
+
 
 
 

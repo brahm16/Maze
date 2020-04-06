@@ -166,3 +166,17 @@ edit_cmd_trait:
 delete_cmd_besoin:
     path: /delete/cmd/besoin/{id}/{f}
     defaults: { _controller: BackendBundle:Commande:deleteCmdBesoin}
+achat_achter_one:
+    path: /achat/achter
+    defaults: { _controller: BackendBundle:Achat:acheterOne}
+achat_achter_two:
+    path: /achat/achter/two/{f}
+    defaults: { _controller: BackendBundle:Achat:acheterTwo}
+achat_acheter_delete:
+    path: /achat/achter/delete/{id}
+    defaults: { _controller: BackendBundle:Achat:deleteAchat}
+achat_acheter_confirm:
+    path: /achat/achter/confirm
+    defaults: { _controller: BackendBundle:Achat:sendMailConfirm}
+
+

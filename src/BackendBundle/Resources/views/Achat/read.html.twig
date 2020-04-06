@@ -9,36 +9,42 @@
             </div>
 
         </div>
-        <div class="count" style="color: #9e9d24;font-size: 2rem; margin-top: 1rem;">
-           Nombre total d'achat : {{ pagination.getTotalItemCount }}
+        <div class="card" >
+            <div class="card-body">
+                <h3 class="card-title">List des achats</h3>
+                <div class="count" style="color: #9e9d24;font-size: 2rem; margin-top: 1rem;">
+                    Nombre total d'achat : {{ pagination.getTotalItemCount }}
+                </div>
+                <table class="table table-hover table-bordered" id="dataTables-example">
+                    <th >Reference</th>
+                    <th >Date</th>
+                    <th >Client</th>
+                    <th >PDF</th>
+
+
+
+
+                    {% for a in pagination %}
+                        <tr id="tr">
+                            <td >{{ a.clientType }}</td>
+                            <td >{{ a.date|date }}</td>
+                            <td >{{ a.clientAddress }}</td>
+                            <td><a href="{{ path('pdf_generate_achat',{'id':a.id}) }}" class="btn btn-success"><i class="fa fa-download"></i></a></td>
+
+
+
+                        </tr>
+                    {% endfor %}
+                </table>
+                <br>
+                <div class="pagination">
+                    {{ knp_pagination_render(pagination) }}
+                </div>
+            </div>
         </div>
 
-            <h3 style="color: white;">List des achats</h3>
-            <table class="table table-hover table-bordered" id="dataTables-example">
-                <th style="color: white;">Reference</th>
-                <th style="color: white;">Date</th>
-                <th style="color: white;">Client</th>
-                <th style="color: white;">PDF</th>
 
 
-
-
-                {% for a in pagination %}
-                    <tr id="tr">
-                        <td style="color: white;">{{ a.clientType }}</td>
-                        <td style="color: white;">{{ a.date|date }}</td>
-                        <td style="color: white;">{{ a.clientAddress }}</td>
-                        <td><a href="{{ path('pdf_generate_achat',{'id':a.id}) }}" class="btn btn-success"><i class="fa fa-download"></i></a></td>
-
-
-
-                    </tr>
-                {% endfor %}
-            </table>
-            <br>
-        <div class="pagination">
-            {{ knp_pagination_render(pagination) }}
-        </div>
 
     </div>
     <script src="//code.highcharts.com/4.1.8/highcharts.js"></script>

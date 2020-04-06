@@ -2,34 +2,66 @@
 {% block body %}
     <h1 style="color: white; margin-top: 5%;" >Mes commandes</h1>
     <br>
+    <form action="{{ path('commande_achat') }}" method="post">
+        <div class="row">
+            <div class="col-xs-offset-2 col-xs-5">
+
+                <input id="d" name="d" class="form-control "  />
+                <br>
+                <script>
+                    $('#d').datepicker({
+                        uiLibrary: 'bootstrap'
+                    });
+                </script>
+
+
+            </div>
+            <div class="col-xs-offset-1 col-xs-1 mb-3">
+                <button type="submit" class="btn btn-danger"><i class="fa fa-search" style="color: white;"></i></button>
+
+            </div>
+        </div>
+    </form>
+
+
+
     <br>
 {% for c  in commandes %}
-    <h4 style="color: white;">{{ c[0].achat.clientType }}</h4>
+    <div class="card" >
+        <div class="card-body">
+            <h4 class="card-title">{{ c[0].achat.clientType }}</h4>
+            <table class="table table-hover table-bordered" id="dataTables-example">
+                <tr>
+                    <th>#</th>
+                    <th >Product Name</th>
+                    <th >Quantite</th>
+                    <th >Prix Total</th>
+                </tr>
+                {% for i in 0..c|length-1  %}
+                    <tr>
+                        <td> <img class="card-img-top" src="{{ asset('uploads/post/'~c[i].product.photo) }}" alt="Card image cap" style="width: 5rem; height: 5rem;"></td>
+                        <td >{{ c[i].product.productName }}</td>
+                        <td >{{ c[i].qte }}</td>
+                        <td >{{ c[i].product.priceTTC*c[i].qte }} DT</td>
+
+                    </tr>
+                {% else %}
+                    <p style="color: white; margin-top: 5%;"><strong>Pas de produit dans votre pannier</strong></p>
+
+
+                {% endfor %}
+            </table>
+        </div>
+    </div>
+
     <br>
-    <table class="table table-hover table-bordered" id="dataTables-example">
-        <tr>
-            <th style="color: white;">Product Name</th>
-            <th style="color: white;">Quantite</th>
-            <th style="color: white;">Prix Total</th>
-        </tr>
-        {% for i in 0..c|length-1  %}
-            <tr>
-                <td style="color: white;">{{ c[i].product.productName }}</td>
-                <td style="color: white;">{{ c[i].qte }}</td>
-                <td style="color: white;">{{ c[i].product.priceTTC*c[i].qte }} DT</td>
 
-            </tr>
-        {% else %}
-            <p style="color: white;"><strong>Pas de produit dans votre pannier</strong></p>
-
-
-        {% endfor %}
-    </table>
     <br>
     <br>
 
+{% else  %}
 
-
+    <p style="color: white; margin-top: 5%;"><strong>Pas de commandes</strong></p>
 
 
 {% endfor %}

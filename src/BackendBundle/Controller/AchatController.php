@@ -3,19 +3,28 @@
 namespace BackendBundle\Controller;
 
 use BackendBundle\Entity\Achat;
+use BackendBundle\Entity\Fournisseur;
 use BackendBundle\Entity\Note;
 use BackendBundle\Entity\ProdAchat;
 use BackendBundle\Entity\Product;
+use BackendBundle\Form\ProdAchatFourType;
 use BackendBundle\Form\ProdAchatType;
 use Symfony\Bundle\FrameworkBundle\Controller\Controller;
 use Symfony\Component\HttpFoundation\Request;
 use Knp\Bundle\SnappyBundle\Snappy\Response\PdfResponse;
 use Ob\HighchartsBundle\Highcharts\Highchart;
+use Sensio\Bundle\FrameworkExtraBundle\Configuration\Security;
+use Sensio\Bundle\FrameworkExtraBundle\Configuration\IsGranted;
+
+
 
 
 
 class AchatController extends Controller
 {
+    /**
+     * @IsGranted({"ROLE_ADMIN", "ROLE_CLIENT"}, statusCode=404, message="Tu n'est pas l'authorisation")
+     */
     public function indexAction(Request $request){
         $user=$this->getUser();
         $achat=$this->getDoctrine()->getRepository(Achat::class)->findOneBy(array('clientAddress'=>$user->getUsername(),'etat'=>0));
@@ -23,7 +32,7 @@ class AchatController extends Controller
           $achat=new Achat();
           $achat->setDate( new \DateTime('now') );
           $achat->setClientAddress($user->getUsername());
-          $achat->setClientName($user->getUsername());
+          $achat->setClientName('client');
             $achats=$this->getDoctrine()->getRepository(Achat::class)->findAll();
             $longeur=count($achats);
             $ref="Reff".$user->getUsername();
@@ -90,7 +99,7 @@ class AchatController extends Controller
 
         );
         $series1 = array(
-            array("name" => "Nombre d'achat",  "data" => array(1,8,5))
+            array("name" => "Nombre d'achat",  "data" => array((int)$table1[2]["NBR"],(int)$table1[1]["NBR"],(int)$table1[0]["NBR"]))
 
 
         );
@@ -112,7 +121,7 @@ class AchatController extends Controller
         $ob->chart->renderTo('linechart');  // The #id of the div where to render the chart
         $ob->title->text('Les achats de trois dernier jours');
         $ob->xAxis->title(array('text'  => "les dates"));
-        $ob->xAxis->categories(array($table1[0]["d"],$table1[1]["d"],$table1[2]["d"]));
+        $ob->xAxis->categories(array($table1[2]["d"],$table1[1]["d"],$table1[0]["d"]));
 
         $ob->yAxis->title(array('text'  => "Nombre d'achat"));
         $ob->series($series1);
@@ -120,6 +129,7 @@ class AchatController extends Controller
 
 
     }
+
     public function pdfAction($id){
         $achat=$this->getDoctrine()->getRepository(Achat::class)->find($id);
 
@@ -142,6 +152,9 @@ class AchatController extends Controller
         );
 
     }
+    /**
+     * @IsGranted({"ROLE_ADMIN", "ROLE_CLIENT"}, statusCode=404, message="Tu n'est pas l'authorisation")
+     */
     public function detailsProduitAction($id){
         $user=$this->getUser();
         $product=$this->getDoctrine()->getRepository(Product::class)->find($id);
@@ -153,6 +166,9 @@ class AchatController extends Controller
 
 
     }
+    /**
+     * @IsGranted({"ROLE_ADMIN", "ROLE_CLIENT"}, statusCode=404, message="Tu n'est pas l'authorisation")
+     */
     public function addAchatAction($id){
         $em= $this->getDoctrine()->getManager();
         $product=$this->getDoctrine()->getRepository(Product::class)->find($id);
@@ -184,6 +200,9 @@ class AchatController extends Controller
 
 
     }
+    /**
+     * @IsGranted({"ROLE_ADMIN", "ROLE_CLIENT"}, statusCode=404, message="Tu n'est pas l'authorisation")
+     */
     public function panierAction(){
         $user=$this->getUser();
         $achat=$this->getDoctrine()->getRepository(Achat::class)->findOneBy(array('clientAddress'=>$user->getUsername(),'etat'=>0));
@@ -193,6 +212,9 @@ class AchatController extends Controller
 
 
     }
+    /**
+     * @IsGranted({"ROLE_ADMIN", "ROLE_CLIENT"}, statusCode=404, message="Tu n'est pas l'authorisation")
+     */
     public function deleteAction($id){
         $em = $this->getDoctrine()->getManager();
         $prodachat=$em->getRepository(ProdAchat::class)->find($id);
@@ -222,6 +244,9 @@ class AchatController extends Controller
             "form" =>$form->createView(),
         ));
     }
+    /**
+     * @IsGranted({"ROLE_ADMIN", "ROLE_CLIENT"}, statusCode=404, message="Tu n'est pas l'authorisation")
+     */
     public function confirmAction(){
         $user=$this->getUser();
         $achat=$this->getDoctrine()->getRepository(Achat::class)->findOneBy(array('clientAddress'=>$user->getUsername(),'etat'=>0));
@@ -245,7 +270,7 @@ class AchatController extends Controller
 
         return $this->redirectToRoute("index_achat");
     }
-    public function commandesAction(){
+    public function commandesAction(Request $request){
         $user=$this->getUser();
         $achats=$this->getDoctrine()->getRepository(Achat::class)->findBy(array('clientAddress'=>$user->getUsername(),'etat'=>1));
         $commandes=array();
@@ -254,12 +279,30 @@ class AchatController extends Controller
             array_push($commandes,$prodachats);
 
         }
+        if($request->isMethod('POST')){
+            $d=$request->request->get("d");
+            $date=date("Y-m-d", strtotime($d) );
+            $user=$this->getUser();
+            $client=$user->getUsername();
+            $achats=$this->getDoctrine()->getRepository(Achat::class)->findByDateParametre($date,1,$client);
+            $commandes=array();
+            foreach($achats as $achat){
+                $prodachats=$this->getDoctrine()->getRepository(ProdAchat::class)->findBy(array('achat'=>$achat));
+                array_push($commandes,$prodachats);
+
+            }
+
+        }
+
         return $this->render("@Backend/Achat/commandes.html.twig",array(
             'commandes'=>$commandes,
 
         ));
 
     }
+    /**
+     * @IsGranted({"ROLE_ADMIN", "ROLE_CLIENT"}, statusCode=404, message="Tu n'est pas l'authorisation")
+     */
     public function addNoteAction(Request $request){
         $em=$this->getDoctrine()->getManager();
         $user=$this->getUser();
@@ -292,6 +335,9 @@ class AchatController extends Controller
         return $this->redirect($this->generateUrl('index_achat_show',array('id' => $id)));
 
     }
+    /**
+     * @IsGranted({"ROLE_ADMIN", "ROLE_CLIENT"}, statusCode=404, message="Tu n'est pas l'authorisation")
+     */
     public function deleteNoteAction($id){
         $em=$this->getDoctrine()->getManager();
         $user=$this->getUser();
@@ -303,4 +349,114 @@ class AchatController extends Controller
 
 
     }
+    public function  acheterOneAction(Request $request){
+        $fournisseurs=$this->getDoctrine()->getRepository(Fournisseur::class)->findAll();
+        if($request->isMethod('POST')){
+            $f=$request->request->get('f');
+            $this->addFlash('success', 'Il faut maintenant ajouter produit');
+
+            return $this->redirect($this->generateUrl('achat_achter_two',array('f' => $f)));
+
+        }
+        return $this->render('@Backend/Achat/achterOne.html.twig',array('fournisseurs'=>$fournisseurs));
+
+    }
+    public function acheterTwoAction(Request $request,$f){
+        $rr=$f;
+        $user=$this->getUser();
+        $achats=$this->getDoctrine()->getRepository(Achat::class)->findAll();
+        $achat=$this->getDoctrine()->getRepository(Achat::class)->findOneBy(array('clientAddress'=>$user->getUsername(),'etat'=>3));
+        if(!$achat){
+            $em= $this->getDoctrine()->getManager();
+
+            $achat=new Achat();
+            $achat->setDate( new \DateTime('now') );
+            $achat->setClientAddress($user->getUsername());
+            $achat->setClientName($rr);
+            $longeur=count($achats);
+            $achat->setClientType('four'.$rr.$longeur);
+            $achat->setEtat(3);
+            $achat->setQuantite(0);
+            $em->persist($achat);
+            $em->flush();
+        }
+        $prodachats=$this->getDoctrine()->getRepository(ProdAchat::class)->findBy(array("achat"=>$achat));
+
+        $prodAchat=new ProdAchat();
+        $form= $this->createForm(ProdAchatFourType::class,$prodAchat);
+        $form->handleRequest($request);
+        if ($form->isSubmitted()){
+            $em= $this->getDoctrine()->getManager();
+            $achat->setQuantite($achat->getQuantite()+$prodAchat->getQte());
+            $em->persist($achat);
+            $em->flush();
+            $prodAchat->setAchat($achat);
+            $product=$prodAchat->getProduct();
+            $prodAchat1=$this->getDoctrine()->getRepository(ProdAchat::class)->findOneBy(array("product"=>$product,"achat"=>$achat));
+            if($prodAchat1){
+                $prodAchat1->setQte($prodAchat1->getQte()+$prodAchat->getQte());
+                $em->flush();
+            }
+            else{
+                $em->persist($prodAchat);
+                $em->flush();
+            }
+
+            $this->addFlash('success', 'Produit est ajouté');
+
+            return $this->render('@Backend/Achat/achterTwo.html.twig',array("form"=>$form->createView(),'f'=>$f,"prodachats"=>$prodachats));
+
+
+        }
+        return $this->render('@Backend/Achat/achterTwo.html.twig',array("form"=>$form->createView(),'f'=>$f,"prodachats"=>$prodachats));
+
+    }
+    public function deleteAchatAction($id){
+        $em = $this->getDoctrine()->getManager();
+        $prodachat=$em->getRepository(ProdAchat::class)->find($id);
+        $user=$this->getUser();
+        $achat=$this->getDoctrine()->getRepository(Achat::class)->findOneBy(array('clientAddress'=>$user->getUsername(),'etat'=>0));
+        $f=$achat->getClientName();
+        $achat->setQuantite($achat->getQuantite()-$prodachat->getQte());
+        $em->persist($achat);
+
+        $em->remove($prodachat);
+        $em->flush();
+        $this->addFlash('success', 'Product deleted ');
+        return $this->redirect($this->generateUrl('achat_achter_two',array('f' => $f)));
+
+
+    }
+    public function sendMailConfirmAction(){
+        $user=$this->getUser();
+        $em = $this->getDoctrine()->getManager();
+        $address=$user->getUsername();
+        $achat=$this->getDoctrine()->getRepository(Achat::class)->findOneBy(array('clientAddress'=>$address,'etat'=>3));
+        $achat->setEtat(4);
+        $em->flush();
+
+        $prodachats=$this->getDoctrine()->getRepository(ProdAchat::class)->findBy(array("achat"=>$achat));
+
+        $message = \Swift_Message::newInstance()
+            ->setSubject('Confirmation Commande')
+            ->setFrom('brahimhm470@gmail.com')
+            ->setTo('brahimhmida95@gmail.com')
+
+
+
+        ->setBody(
+                $this->renderView(
+                    '@Backend/Achat/sendMail.html.twig',
+                    array("achat"=>$achat,"prodachats"=>$prodachats)
+                ),
+                'text/html'
+            );
+        $this->get('mailer')->send($message);
+        $this->addFlash('success', 'Mail est envoyé à la fournisseur');
+
+        return $this->redirectToRoute('achat_achter_one');
+
+    }
+
+
 }
