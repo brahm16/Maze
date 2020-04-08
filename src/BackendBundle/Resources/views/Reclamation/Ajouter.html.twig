@@ -1,0 +1,80 @@
+{% extends 'Client.html.twig' %}
+{% block body %}
+    <div class="card" >
+        <div class="card-body">
+            <h1 class="alert alert-success" role="alert" style="text-align: center; width: 75%;margin-left: auto;
+    margin-right: auto;">Gestion des réclamations</h1>
+            <div >
+                {{ form_start(formulaire,{'attr':{'novalidate':'novalidate'}}) }}
+                <div class="form-group">
+                    {{ form_label(formulaire.idProduct, 'Choisissez le produit à réclamer') }}
+                    {{ form_widget(formulaire.idProduct,{'attr':{'class':'form-control'}}) }}
+                    {% if form_errors(formulaire.idProduct) != "" %}
+                        <div class="alert-warning alert-dismissible fade show">{{ form_errors(formulaire.idProduct) }}</div>
+                    {% endif %}
+                </div>
+                <div class="form-group">
+                    {{ form_label(formulaire.priority, 'Choisissez le niveau de priorité') }}
+                    {{ form_widget(formulaire.priority,{'attr':{'class':'form-control'}}) }}
+                    {% if form_errors(formulaire.priority) != "" %}
+                        <div class="alert-warning alert-dismissible fade show">
+                            {{ form_errors(formulaire.priority) }}</div>
+                    {% endif %}
+                </div>
+                <div class="form-group">
+                    {{ form_label(formulaire.contenu, 'Contenu') }}
+                    {{ form_widget(formulaire.contenu,{'attr':{'class':'form-control','placeholder':'Taper votre réclamation'}}) }}
+                    {% if form_errors(formulaire.contenu) != "" %}
+                        <div class="alert-warning alert-dismissible fade show">
+                            {{ form_errors(formulaire.contenu) }}</div>
+                    {% endif %}
+                </div>
+
+                {% if article.id is defined %}
+                    <button type="submit" class="btn btn-warning">
+                        Modifier</button>
+                {% else %}
+                    <button type="submit" class="btn btn-primary">
+                        Ajouter Réclamation</button>
+                {% endif %}
+
+
+                {{ form_end(formulaire) }}
+            </div>
+            <div  style="margin-top: 20px">
+                <table class="table table-bordered">
+                    <thead class="thead-light">
+                    <tr>
+                        <th scope="col">id_Reclamation</th>
+                        <th scope="col">Date</th>
+                        <th scope="col">Etat</th>
+                        <th scope="col">Contenu</th>
+                        <th scope="col">Produit</th>
+                        <th scope="col">Priorité</th>
+                        <th colspan="2" scope="col" style="text-align: center">Actions</th>
+                    </tr>
+                    </thead>
+
+                    {% for art in article %}
+
+                        <tbody>
+                        <tr>
+                            <th scope="row">{{ art.id }}</th>
+                            <td>{{ art.date|date }}</td>
+                            <td>{{ art.etat }}</td>
+                            <td>{{ art.contenu }}</td>
+
+                            <td>{{ art.idProduct.productName }}</td>
+                            <td>{{ art.priority.niveau }}</td>
+                            <td><a href="{{ path('supprimer_reclamation',{'id':art.id}) }}" class="btn btn-danger">Supprimer</a> </td>
+                            <td><a href="{{ path('update_reclamation',{'id':art.id}) }}" class="btn btn-warning">Mise à jour</a> </td>
+                        </tr>
+                        </tbody>
+                    {% endfor %}
+
+                </table>
+            </div>
+        </div>
+    </div>
+
+{% endblock %}

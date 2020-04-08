@@ -178,5 +178,21 @@ achat_acheter_delete:
 achat_acheter_confirm:
     path: /achat/achter/confirm
     defaults: { _controller: BackendBundle:Achat:sendMailConfirm}
+ajouter_reclamation:
+    path: /ajouterrec
+    defaults: { _controller: BackendBundle:Reclamation:ajouter}
+update_reclamation:
+    path: /ajouterrec/{id}
+    defaults: { _controller: BackendBundle:Reclamation:Update}
+
+supprimer_reclamation:
+    path: /supprimer/{id}
+    defaults: { _controller: BackendBundle:Reclamation:delete}
+reclamation_admin:
+    path: /admin/gestion_reclamation
+    defaults: { _controller: BackendBundle:Reclamation:listAdmin}
+update_etat_reclamation:
+    path: /home/gestion_reclamation/{id}
+    defaults: { _controller: BackendBundle:Reclamation:updateEtat}
 
 
