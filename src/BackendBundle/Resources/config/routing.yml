@@ -194,5 +194,45 @@ reclamation_admin:
 update_etat_reclamation:
     path: /home/gestion_reclamation/{id}
     defaults: { _controller: BackendBundle:Reclamation:updateEtat}
+add_entrepot:
+    path: /addentrepot
+    defaults: { _controller: BackendBundle:Entrepot:addEntrepot }
+
+list_entrepot:
+    path: /listentrepot
+    defaults: { _controller: BackendBundle:Entrepot:listEntrepot }
+
+edit_entrepot:
+    path: /editentrepot/{id}
+    defaults: { _controller: BackendBundle:Entrepot:updateEntrepot }
+
+entrepot_show:
+    path: /editentrepot/{id}
+    defaults: { _controller: BackendBundle:Entrepot:updateEntrepot }
+
+delete_entrepot:
+    path: /deleteentrepot/{id}
+    defaults: { _controller: BackendBundle:Entrepot:deleteEntrepot }
+
+
+add_stock:
+    path: /addstock
+    defaults: { _controller: BackendBundle:Stock:addStock }
+
+list_stock:
+    path: /liststock
+    defaults: { _controller: BackendBundle:Stock:listStock }
+
+edit_stock:
+    path: /editstock/{id}
+    defaults: { _controller: BackendBundle:Stock:updateStock }
+
+stock_show:
+    path: /editstock/{id}
+    defaults: { _controller: BackendBundle:Stock:updateStock }
+
+delete_stock:
+    path: /deletestock/{id}
+    defaults: { _controller: BackendBundle:Stock:deleteStock }
 
 

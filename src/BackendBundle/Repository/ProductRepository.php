@@ -63,6 +63,17 @@ class ProductRepository extends \Doctrine\ORM\EntityRepository
             ->setParameter('str', '%'.$str.'%')
             ->getResult();
     }
+    public function findByProductParametre($productName){
+        $query=$this->getEntityManager()
+            ->createQuery("SELECT p FROM BackendBundle:Product p where p.productName LIKE :d ")
+            ->setParameter('d',"%".$productName."%")
+           ;
+
+
+        return $query->getResult();
+
+
+    }
 
 }
 

@@ -79,7 +79,7 @@
         <div class="login-page">
             <div class="form">
                 <label style="color: #000000; margin-bottom: 10%" class="connexion">Inscription</label>
-
+                <br><br>
                 {{ form_errors(form.username) }}
                 {{ form_widget(form.username, {'attr': {'class': 'input_text required','placeholder':'Pseudo'}}) }}
 
@@ -97,6 +97,8 @@
 
                 {{ form_errors(form.plainPassword.second) }}
                 {{ form_widget(form.plainPassword.second, {'attr': {'class': 'input_password required', 'IDU': 'contact_name','placeholder':'Confirmer mot de passe'}}) }}
+                {{ form_errors(form.captcha) }}
+                {{ form_widget(form.captcha)}}
                 <button id="_submit" name="_submit" type="submit">Inscription</button>
                 <p class="message">Already registered? <a href="{{ path('fos_user_security_login') }}">Sign In</a></p>
             </div>

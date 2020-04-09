@@ -2,16 +2,18 @@
 
 {% block body %}
     <div class="container">
-        <div class="row top-margin">
-            <div class="col-xs-offset-2 col-xs-8">
-                <input type="text" id="myInput" onkeyup="myFunction()" placeholder="Search By reference" title="Type in a name" class="form-control">
 
-            </div>
 
-        </div>
         <div class="card" >
             <div class="card-body">
                 <h3 class="card-title">List des achats</h3>
+                <div class="row ">
+                    <div class="col-xs-offset-2 col-xs-8">
+                        <input type="text" id="myInput" onkeyup="myFunction()" placeholder="Search By reference" title="Type in a name" class="form-control">
+
+                    </div>
+
+                </div>
                 <div class="count" style="color: #9e9d24;font-size: 2rem; margin-top: 1rem;">
                     Nombre total d'achat : {{ pagination.getTotalItemCount }}
                 </div>

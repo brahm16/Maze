@@ -52,7 +52,7 @@ class AchatController extends Controller
 
         if($request->isMethod('POST')){
             $name=$request->request->get('myInput');
-            $products=$this->getDoctrine()->getRepository(Product::class)->findBy(array('productName'=>$name));
+            $products=$this->getDoctrine()->getRepository(Product::class)->findByProductParametre($name);
 
         }
         return $this->render('@Backend/Achat/index.html.twig',array('products'=>$products,'user'=>$user,'achat'=>$achat));
@@ -300,22 +300,21 @@ class AchatController extends Controller
         ));
 
     }
-    /**
-     * @IsGranted({"ROLE_ADMIN", "ROLE_CLIENT"}, statusCode=404, message="Tu n'est pas l'authorisation")
-     */
+
     public function addNoteAction(Request $request){
         $em=$this->getDoctrine()->getManager();
         $user=$this->getUser();
-        $note=new Note();
         $valeur=$request->request->get("rate");
         $id=$request->request->get("p");
         $product=$this->getDoctrine()->getRepository(Product::class)->find((int)$id);
-        $note=$this->getDoctrine()->getRepository(Note::class)->findOneBy(array("product"=>$product));
+        $note=$this->getDoctrine()->getRepository(Note::class)->findOneBy(array("product"=>$product,"client"=>$user->getUsername()));
         if($note){
             $note->setEtat(1);
             $note->setValeur((int)$valeur);
             $note->setDateEdit(new \DateTime('now'));
             $em->flush();
+            return $this->redirect($this->generateUrl('index_achat_show',array('id' => $id)));
+
 
 
         }
@@ -329,6 +328,8 @@ class AchatController extends Controller
             $note->setDateEdit(new \DateTime('now'));
             $em->persist($note);
             $em->flush();
+            return $this->redirect($this->generateUrl('index_achat_show',array('id' => $id)));
+
         }
 
 

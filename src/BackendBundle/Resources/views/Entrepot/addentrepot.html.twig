@@ -1,0 +1,39 @@
+{% extends 'AgentGestionnaire.html.twig' %}
+
+{% block body %}
+    <div class="card">
+        <div class="card-body">
+            <center><h2 class="contact-title">
+                    <br><br>
+                    ADD Entrepot
+                </h2></center>
+            <div class="form-group has-error"  >
+                {{ form_start(form) }}
+                {{ form_widget(form.address,{'attr':{'type':'text','class':'form-control','placeholder':'adresse...'}}) }}
+                <br> <br> <br>
+                {{ form_widget(form.nbrRangs,{'attr':{'type':'text','class':'form-control','placeholder':'Nombre de rangs...'}}) }}
+                <br> <br> <br>
+                {{ form_widget(form.phone,{'attr':{'type':'text','class':'form-control','placeholder':'Téléphone...'}}) }}
+                <br> <br> <br>
+                {{ form_widget(form.phoneBis,{'attr':{'type':'text','class':'form-control','placeholder':'Téléphone bis...'}}) }}
+                <br> <br> <br>
+                <center> {{ form_widget(form.Submit,{'attr':{'type':'text','class':'btn btn-common','placeholder':'ADD...'}}) }}        </center>
+                <br> <br> <br>
+                {{ form_end(form) }}
+            </div>
+
+            <br><br><br>
+
+            <div class="alert alert-warning" role="alert">
+                <h3>
+                    In order to add a new product you should an Gestionnaire,if you are not
+                    you can list all our entrepot :) :)  </h3>
+
+            </div>
+        </div>
+    </div>
+
+
+
+
+{% endblock %}
