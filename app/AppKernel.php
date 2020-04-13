@@ -24,6 +24,8 @@ class AppKernel extends Kernel
             new Ob\HighchartsBundle\ObHighchartsBundle(),
             new Knp\Bundle\PaginatorBundle\KnpPaginatorBundle(),
             new Knp\Bundle\SnappyBundle\KnpSnappyBundle(),
+            new Egyg33k\CsvBundle\Egyg33kCsvBundle(),
+
 
 
 

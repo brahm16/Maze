@@ -67,6 +67,10 @@ class ComposerStaticInit16526197d41008a0d01ad0f44b1d1afc
         array (
             'Monolog\\' => 8,
         ),
+        'L' => 
+        array (
+            'League\\Csv\\' => 11,
+        ),
         'K' => 
         array (
             'Knp\\Snappy\\' => 11,
@@ -88,6 +92,10 @@ class ComposerStaticInit16526197d41008a0d01ad0f44b1d1afc
         array (
             'Fig\\Link\\' => 9,
             'FOS\\UserBundle\\' => 15,
+        ),
+        'E' => 
+        array (
+            'Egyg33k\\CsvBundle\\' => 18,
         ),
         'D' => 
         array (
@@ -222,6 +230,10 @@ class ComposerStaticInit16526197d41008a0d01ad0f44b1d1afc
         array (
             0 => __DIR__ . '/..' . '/monolog/monolog/src/Monolog',
         ),
+        'League\\Csv\\' => 
+        array (
+            0 => __DIR__ . '/..' . '/league/csv/src',
+        ),
         'Knp\\Snappy\\' => 
         array (
             0 => __DIR__ . '/..' . '/knplabs/knp-snappy/src/Knp/Snappy',
@@ -261,6 +273,10 @@ class ComposerStaticInit16526197d41008a0d01ad0f44b1d1afc
         'FOS\\UserBundle\\' => 
         array (
             0 => __DIR__ . '/..' . '/friendsofsymfony/user-bundle',
+        ),
+        'Egyg33k\\CsvBundle\\' => 
+        array (
+            0 => __DIR__ . '/..' . '/egyg33k/csv-bundle',
         ),
         'Doctrine\\Instantiator\\' => 
         array (

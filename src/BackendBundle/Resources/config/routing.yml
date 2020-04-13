@@ -235,4 +235,27 @@ delete_stock:
     path: /deletestock/{id}
     defaults: { _controller: BackendBundle:Stock:deleteStock }
 
+esprit_ajoutDelivery:
+    path:     /ajoutDelivery
+    defaults: { _controller: BackendBundle:Delivery:ajoutDelivery }
+esprit_afficheDelivery:
+    path:     /afficheDelivery
+    defaults: { _controller: BackendBundle:Delivery:afficheDelivery }
+esprit_supprimeDelivery:
+    path:     /supprimeDelivery/{id}
+    defaults: { _controller: BackendBundle:Delivery:supprimeDelivery }
+
+esprit_afficheVehicule:
+    path:     /afficheVehicule
+    defaults: { _controller: BackendBundle:Delivery:afficheVehicule }
+esprit_supprimeVehicule:
+    path:     /supprimeVehicule/{id}
+    defaults: { _controller: BackendBundle:Delivery:supprimeVehicule }
+esprit_ajoutVehicule:
+    path:     /ajoutVehicule
+    defaults: { _controller: BackendBundle:Delivery:ajoutVehicule }
+esprit_export:
+    path:     /export
+    defaults: { _controller: BackendBundle:Delivery:export }
+
 

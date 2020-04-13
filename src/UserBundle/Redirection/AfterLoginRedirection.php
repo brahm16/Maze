@@ -47,7 +47,7 @@ class AfterLoginRedirection implements AuthenticationSuccessHandlerInterface
             $redirection = new RedirectResponse($this->router->generate('agentFinan'));
         }
         elseif (in_array('ROLE_AGENTTRANSPORT', $rolesTab, true)){
-            $redirection = new RedirectResponse($this->router->generate('agentTransport'));
+            $redirection = new RedirectResponse($this->router->generate('agentTrans'));
         }
         elseif (in_array('ROLE_CLIENT', $rolesTab, true)){
             $redirection = new RedirectResponse($this->router->generate('index_achat'));

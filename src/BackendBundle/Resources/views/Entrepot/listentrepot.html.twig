@@ -3,7 +3,7 @@
 {% block body %}
     <div class="card">
         <div class="card-body">
-            <h1 style="color:#ffffff">Lists of Entrepot !</h1>
+            <center><h1 >Lists of Entrepot !</h1></center>
             <table class="table table-hover table-bordered">
                 <tr>
                     <td>
@@ -52,10 +52,34 @@
                         <td >
                             <a href="{{ path('edit_entrepot', { 'id': entrepot.id }) }}" class="btn btn-primary">Edit</a>
                             |
-                            <a href="{{ path('delete_entrepot', { 'id': entrepot.id }) }}" class="btn btn-warning">Delete</a>
+                            <a href="{{ path('delete_entrepot', { 'id': entrepot.id }) }}"  class="btn btn-warning">Delete</a>
+                            |
+                            <a onclick="$('#myModalMap').modal();"  class="btn btn-primary">Show in Maps</a>
+
 
                         </td>
                     </tr>
+                    <div class="modal fade" id="myModalMap" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" style="width: 1200;height: 600px">
+                        <div class="modal-dialog" role="document">
+                            <div class="modal-content" style="width:630px;height: 550px">
+                                <div class="modal-header"style="height: 60px">
+                                    <h4>Google Maps</h4>
+                                    <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                                </div>
+                                <div class="modal-body">
+                                    <div id="response"></div>
+                                    <div class="form-group">
+                                        <iframe src = "https://maps.google.com/maps?q={{ entrepot.latitude }},{{ entrepot.longitude }}&hl=es;z=14&amp;output=embed" style="width: 600px;height: 400px"></iframe>
+                                    </div>
+                                </div>
+                                <div class="modal-footer">
+                                    <button type="button" class="btn btn-warning" data-dismiss="modal">Close</button>
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
                 {% endfor %}
             </table>
             <div class="row ">

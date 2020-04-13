@@ -1,5 +1,27 @@
  {% extends 'Backend.html.twig' %}
- {% bolck title %} welcome Agent Transport{% endblock %}
-{% block body %}
-<h1>Agent Transport</h1>
+ {% block title %} welcome Agent Transport{% endblock %}
+  {% block stylesheet %}
+   <link href="{{ asset('admin/css/progressStyle.css') }}" rel="stylesheet" type="text/css" />
+
+  {% endblock %}
+ {% block header %}
+  <!--sidebar nav start-->
+  <ul class="nav nav-pills nav-stacked custom-nav">
+
+   <li class="menu-list"><a href="#"><i class="lnr lnr-envelope"></i> <span>Livraison</span></a>
+    <ul class="sub-menu-list">
+     <li><a href="{{ path('esprit_afficheDelivery')}}">LIST</a> </li>
+     <li><a href="{{ path('esprit_ajoutDelivery')}}">ADD</a></li>
+    </ul>
+   </li>
+   <li class="menu-list"><a href="#"><i class="lnr lnr-envelope"></i> <span>Voitures</span></a>
+    <ul class="sub-menu-list">
+     <li><a href="{{ path('esprit_afficheVehicule')}}">LIST</a> </li>
+     <li><a href="{{ path('esprit_ajoutVehicule')}}">ADD</a></li>
+    </ul>
+   </li>
+
+  </ul>
  {% endblock %}
+{% block body %}
+{% endblock %}

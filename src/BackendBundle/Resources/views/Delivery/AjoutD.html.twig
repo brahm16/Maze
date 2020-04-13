@@ -1,0 +1,26 @@
+{% extends 'AgentTransport.html.twig' %}
+{% block body %}
+    <div class="card">
+        <div class="card-body">
+            {{ form_start(form) }}
+            {{ form_widget(form.reference) }}
+            <br>
+            {{ form_widget(form.clientName) }}
+            <br>
+            {{ form_widget(form.driverName) }}
+            <br>
+            {{ form_widget(form.statut) }}
+            <br>
+            {{ form_widget(form.address) }}
+            <br>
+            {{ form_widget(form.vehicule,{'attr':{'class':'form-control'}}) }}
+            <br>
+            <input type="submit" value="Ajouter Bon Livraison" class="btn btn-success">
+
+            {{ form_end(form) }}
+
+
+        </div>
+    </div>
+{% endblock %}
+

@@ -1,0 +1,36 @@
+{% extends 'AgentTransport.html.twig' %}
+
+{% block body %}
+    <div class="card">
+        <div class="card-body">
+            <h2 align="center"> Liste des Vehicule</h2>
+
+
+            <center><th><a href="{{ path('esprit_ajoutVehicule') }}">Ajouter</a></th></center>
+            <table  class="table table-hover table-bordered">
+
+                <tr>
+                    <th width="100">matricule</th>
+                    <th width="100">weight</th>
+                    <th width="100">etat</th>
+                    <th width="100">marque</th>
+                    <th width="100">description</th>
+
+                    <th width="100"></th>
+                </tr>
+
+                {% for d in vehicule %}
+                    <tr>
+                        <td align="center">{{ d.matricule }}</td>
+                        <td align="center">{{ d.weight }}</td>
+                        <td align="center">{{ d.etat }}</td>
+                        <td align="center">{{ d.marque }}</td>
+                        <td align="center">{{ d.description }}</td>
+                        <td align="center"><a href="{{ path('esprit_supprimeVehicule',{'id':d.id}) }}">Delete</a></td>
+                    </tr>
+                {% endfor %}
+            </table>        </div>
+    </div>
+
+{% endblock %}
+

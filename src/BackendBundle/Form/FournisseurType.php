@@ -10,6 +10,7 @@ use Symfony\Component\Form\Extension\Core\Type\EmailType;
 use Symfony\Component\Validator\Constraints\Length;
 use Symfony\Component\Validator\Constraints\NotBlank;
 use Symfony\Component\Validator\Constraints\Email;
+use Symfony\Component\Form\Extension\Core\Type\NumberType;
 
 
 class FournisseurType extends AbstractType
@@ -32,7 +33,7 @@ class FournisseurType extends AbstractType
                 new Length(array('max' => 20)),
             )))
 
-            ->add('phoneNumber',TextType::class,array('attr' => array('class' => 'form-control'),'constraints' => array(
+            ->add('phoneNumber',NumberType::class,array('attr' => array('class' => 'form-control'),'constraints' => array(
                 new NotBlank(),
                 new Length(array('min' =>8)),
                 new Length(array('max' => 11)),
