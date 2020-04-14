@@ -127,3 +127,14 @@ fos_user:
                     template: '@FOSUser/Resetting/email.txt.twig'
 
 gregwar_captcha: ~
+
+vresh_twilio:
+    #(Required) Your Account SID from www.twilio.com/user/account
+    sid: 'AC02f86af29ff3caf5c5b0fab5a5402c42'
+    #(Required) Your Auth Token from www.twilio.com/user/account
+    authToken: '72bca602aa940340d414e252fca2cfdd'
+    #(Optional, default: '2010-04-01') Twilio API version
+    version: '2010-04-01'
+    #(Optional, default: 1) Number of times to retry failed requests
+    retryAttempts: 3
+

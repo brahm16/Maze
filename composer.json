@@ -28,7 +28,9 @@
         "symfony/polyfill-apcu": "^1.0",
         "symfony/swiftmailer-bundle": "^2.6.4",
         "symfony/symfony": "3.4.*",
-        "twig/twig": "^1.0||^2.0"
+        "twig/twig": "^1.0||^2.0",
+        "twilio/sdk": "^5.42",
+        "vresh/twilio-bundle": "^1.0"
     },
     "require-dev": {
         "sensio/generator-bundle": "^3.0",

@@ -7,6 +7,8 @@ $baseDir = dirname($vendorDir);
 
 return array(
     'Zend\\Json\\' => array($vendorDir . '/zendframework/zend-json/src'),
+    'Vresh\\TwilioBundle\\' => array($vendorDir . '/vresh/twilio-bundle'),
+    'Twilio\\' => array($vendorDir . '/twilio/sdk/src/Twilio'),
     'Twig\\' => array($vendorDir . '/twig/twig/src'),
     'Tests\\' => array($baseDir . '/tests'),
     'Symfony\\Polyfill\\Util\\' => array($vendorDir . '/symfony/polyfill-util'),

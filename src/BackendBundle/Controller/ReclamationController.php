@@ -8,10 +8,22 @@ use BackendBundle\Entity\User;
 use BackendBundle\Form\ReclamationType;
 use Symfony\Bundle\FrameworkBundle\Controller\Controller;
 use Symfony\Component\HttpFoundation\Request;
+use Twilio\Rest\Client;
 
 class ReclamationController extends Controller
 {
+    public function count()
+    {
+        $count = 0;
+        $em = $this->getDoctrine()->getManager();
+        $commentaire = $em->getRepository("BackendBundle:Reclamation")->findBy(array("priority"=>1));
+        foreach ($commentaire as $e){
+            $count = $count + 1;
+        }
 
+        return $count;
+
+    }
 
     public function ajouterAction(Request $request)
     {
@@ -35,6 +47,22 @@ class ReclamationController extends Controller
                 ' a ajouté une nouvelle réclamation concernant le produit '.$rec->getIdProduct()->getProductName().
                 ', le : '.$rec->getDate()->format('Y-m-d H:i:s'));
             $em = $this->getDoctrine()->getManager();
+
+            $sid    = "AC02f86af29ff3caf5c5b0fab5a5402c42";
+            $token  = "72bca602aa940340d414e252fca2cfdd";
+            $client = new Client($sid, $token);
+            $message = $client->messages->create(
+                '+21690118795', // Text this number
+                [
+                    'from' => '+16208786068', // From a valid Twilio number
+                    'body' => 'une nouvelle reclamation !'
+                ]
+            );
+
+
+
+
+
             $em->persist($rec);
             $em->persist($task);
             $em->flush();

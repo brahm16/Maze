@@ -24,8 +24,13 @@ class ComposerStaticInit16526197d41008a0d01ad0f44b1d1afc
         array (
             'Zend\\Json\\' => 10,
         ),
+        'V' => 
+        array (
+            'Vresh\\TwilioBundle\\' => 19,
+        ),
         'T' => 
         array (
+            'Twilio\\' => 7,
             'Twig\\' => 5,
             'Tests\\' => 6,
         ),
@@ -117,6 +122,14 @@ class ComposerStaticInit16526197d41008a0d01ad0f44b1d1afc
         'Zend\\Json\\' => 
         array (
             0 => __DIR__ . '/..' . '/zendframework/zend-json/src',
+        ),
+        'Vresh\\TwilioBundle\\' => 
+        array (
+            0 => __DIR__ . '/..' . '/vresh/twilio-bundle',
+        ),
+        'Twilio\\' => 
+        array (
+            0 => __DIR__ . '/..' . '/twilio/sdk/src/Twilio',
         ),
         'Twig\\' => 
         array (

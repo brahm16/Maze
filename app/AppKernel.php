@@ -19,6 +19,7 @@ class AppKernel extends Kernel
             new AppBundle\AppBundle(),
             new \BackendBundle\BackendBundle(),
             new FOS\UserBundle\FOSUserBundle(),
+            new Vresh\TwilioBundle\VreshTwilioBundle(),
             new UserBundle\UserBundle(),
             new Gregwar\CaptchaBundle\GregwarCaptchaBundle(),
             new Ob\HighchartsBundle\ObHighchartsBundle(),
