@@ -1,0 +1,68 @@
+{% extends 'base.html.twig' %}
+
+{% block body %}
+<div class="card">
+    <div class="card-body">
+        <h1>Paiement</h1>
+        <table style="border-color:#ffffff"class="table table-hover table-bordered" id="dataTables-example">
+            <tbody>
+            <tr>
+                <th>Id</th>
+                <td>{{ facture.id }}</td>
+            </tr>
+            <tr>
+                <th>Reference</th>
+                <td>{{ facture.reference }}</td>
+            </tr>
+            <tr>
+                <th>Clientname</th>
+                <td>{{ facture.clientName }}</td>
+            </tr>
+            <tr>
+                <th>Clienttype</th>
+                <td>{{ facture.clientType }}</td>
+            </tr>
+            <tr>
+                <th>Typefacture</th>
+                <td>{{ facture.typeFacture }}</td>
+            </tr>
+            <tr>
+                <th>Statutfacture</th>
+                <td>{{ facture.statutFacture }}</td>
+            </tr>
+            <tr>
+                <th>Totalht</th>
+                <td>{{ facture.totalHT }}</td>
+            </tr>
+            <tr>
+                <th>Totalttc</th>
+                <td>{{ facture.totalTTC }}</td>
+            </tr>
+            <tr>
+                <th>Echeance</th>
+                <td>{{ facture.echeance }}</td>
+            </tr>
+            <tr>
+                <th>Datefact</th>
+                <td>{% if facture.dateFact %}{{ facture.dateFact|date('Y-m-d H:i:s') }}{% endif %}</td>
+            </tr>
+            </tbody>
+        </table>
+
+        <ul>
+            <li>
+                <a href="{{ path('facture_index') }}" class="btn btn-primary">Back to the list</a>
+            </li>
+            <li>
+                <a href="{{ path('facture_edit', { 'id': facture.id }) }}" class="btn btn-success">Edit</a>
+            </li>
+            <li>
+                {{ form_start(delete_form) }}
+                <input type="submit" value="Delete" class="btn btn-warning">
+                {{ form_end(delete_form) }}
+            </li>
+        </ul>
+    </div>
+</div>
+
+{% endblock %}

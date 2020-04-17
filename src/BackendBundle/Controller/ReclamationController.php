@@ -48,7 +48,7 @@ class ReclamationController extends Controller
                 ', le : '.$rec->getDate()->format('Y-m-d H:i:s'));
             $em = $this->getDoctrine()->getManager();
 
-            $sid    = "AC02f86af29ff3caf5c5b0fab5a5402c42";
+           /* $sid    = "AC02f86af29ff3caf5c5b0fab5a5402c42";
             $token  = "72bca602aa940340d414e252fca2cfdd";
             $client = new Client($sid, $token);
             $message = $client->messages->create(
@@ -57,7 +57,7 @@ class ReclamationController extends Controller
                     'from' => '+16208786068', // From a valid Twilio number
                     'body' => 'une nouvelle reclamation !'
                 ]
-            );
+            );*/
 
 
 
@@ -130,12 +130,14 @@ class ReclamationController extends Controller
 
     public function listAdminAction()
     {
+        $count = $this->count();
         $em = $this->getDoctrine()->getManager();
         $reclamation = $em->getRepository(Reclamation::class)->findAll();
         $tasks = $em->getRepository(Task::class)->findAll();
         return $this->render('@Backend/Reclamation/adminManager.html.twig',
             array('articles'=>$reclamation,
-                  'tasks'=>$tasks));
+                  'tasks'=>$tasks,
+                'c'=>$count));
     }
 
     public function updateEtatAction($id)

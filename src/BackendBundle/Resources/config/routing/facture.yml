@@ -1,0 +1,24 @@
+facture_index:
+    path:     /
+    defaults: { _controller: "BackendBundle:Facture:index" }
+    methods:  GET
+
+facture_show:
+    path:     /{id}/show
+    defaults: { _controller: "BackendBundle:Facture:show" }
+    methods:  GET
+
+facture_new:
+    path:     /new
+    defaults: { _controller: "BackendBundle:Facture:new" }
+    methods:  [GET, POST]
+
+facture_edit:
+    path:     /{id}/edit
+    defaults: { _controller: "BackendBundle:Facture:edit" }
+    methods:  [GET, POST]
+
+facture_delete:
+    path:     /{id}/delete
+    defaults: { _controller: "BackendBundle:Facture:delete" }
+    methods:  DELETE

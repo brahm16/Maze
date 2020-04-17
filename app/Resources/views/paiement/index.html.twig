@@ -1,0 +1,51 @@
+{% extends 'AgentFinancier.html.twig' %}
+
+{% block body %}
+    <div class="card">
+        <div class="card-body">
+            <h1>Paiements list</h1>
+
+            <table style="border-color:#ffffff"class="table table-hover table-bordered" id="dataTables-example">
+                <thead>
+                <tr>
+                    <th>Id</th>
+                    <th>Reference</th>
+                    <th>Clientname</th>
+                    <th>Paiementtype</th>
+                    <th>Rib</th>
+                    <th>Numcheque</th>
+                    <th>Actions</th>
+                </tr>
+                </thead>
+                <tbody>
+                {% for paiement in paiements %}
+                    <tr>
+                        <td><a href="{{ path('paiement_show', { 'id': paiement.id }) }}">{{ paiement.id }}</a></td>
+                        <td>{{ paiement.reference }}</td>
+                        <td>{{ paiement.clientName }}</td>
+                        <td>{{ paiement.paiementType }}</td>
+                        <td>{{ paiement.rib }}</td>
+                        <td>{{ paiement.numCheque }}</td>
+                        <td>
+                            <ul>
+                                <li>
+                                    <a href="{{ path('paiement_show', { 'id': paiement.id }) }}"  class="btn btn-primary">show</a>
+                                </li>
+                                <li>
+                                    <a href="{{ path('paiement_edit', { 'id': paiement.id }) }}"  class="btn btn-success">edit</a>
+                                </li>
+                            </ul>
+                        </td>
+                    </tr>
+                {% endfor %}
+                </tbody>
+            </table>
+
+            <ul>
+                <li>
+                    <a href="{{ path('paiement_new') }}"  class="btn btn-warning">Create a new paiement</a>
+                </li>
+            </ul>        </div>
+    </div>
+
+{% endblock %}

@@ -9,6 +9,14 @@ backend_matriel:
     resource: "@BackendBundle/Resources/config/routing/matriel.yml"
     prefix:   /matriels
 
+backend_paiement:
+    resource: "@BackendBundle/Resources/config/routing/paiement.yml"
+    prefix:   /paiement
+
+backend_facture:
+    resource: "@BackendBundle/Resources/config/routing/facture.yml"
+    prefix:   /facture
+
 backend_besoin_createOne:
     path: /besoin/create/1
     defaults: { _controller: BackendBundle:Besoin:createOne }
@@ -136,6 +144,9 @@ trait_besoin:
 pdf_generate:
     path: /besoin/pdf/{id}
     defaults: { _controller: BackendBundle:Besoin:pdf}
+pdf_generate_facture:
+    path: /facture/pdf/{id}
+    defaults: { _controller: BackendBundle:Facture:pdf}
 pdf_generate_achat:
     path: /achat/pdf/{id}
     defaults: { _controller: BackendBundle:Achat:pdf}

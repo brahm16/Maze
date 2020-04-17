@@ -10,7 +10,10 @@ class ComposerStaticInit16526197d41008a0d01ad0f44b1d1afc
         '92c8763cd6170fce6fcfe7e26b4e8c10' => __DIR__ . '/..' . '/symfony/phpunit-bridge/bootstrap.php',
         '320cde22f66dd4f5d3fd621d3e88b98f' => __DIR__ . '/..' . '/symfony/polyfill-ctype/bootstrap.php',
         '2c102faa651ef8ea5874edb585946bce' => __DIR__ . '/..' . '/swiftmailer/swiftmailer/lib/swift_required.php',
+        '9c67151ae59aff4788964ce8eb2a0f43' => __DIR__ . '/..' . '/clue/stream-filter/src/functions_include.php',
         '5255c38a0faeba867671b61dfda6d864' => __DIR__ . '/..' . '/paragonie/random_compat/lib/random.php',
+        '8cff32064859f4559445b89279f3199c' => __DIR__ . '/..' . '/php-http/message/src/filters.php',
+        'c65d09b6820da036953a371c8c73a9b1' => __DIR__ . '/..' . '/facebook/graph-sdk/src/Facebook/polyfills.php',
         '32dcc8afd4335739640db7d200c1971d' => __DIR__ . '/..' . '/symfony/polyfill-apcu/bootstrap.php',
         '6a47392539ca2329373e0d33e1dba053' => __DIR__ . '/..' . '/symfony/polyfill-intl-icu/bootstrap.php',
         '0e6d7bf4a5811bfa5cf40c5ccd6fae6a' => __DIR__ . '/..' . '/symfony/polyfill-mbstring/bootstrap.php',
@@ -61,6 +64,7 @@ class ComposerStaticInit16526197d41008a0d01ad0f44b1d1afc
             'Psr\\SimpleCache\\' => 16,
             'Psr\\Log\\' => 8,
             'Psr\\Link\\' => 9,
+            'Psr\\Http\\Message\\' => 17,
             'Psr\\Container\\' => 14,
             'Psr\\Cache\\' => 10,
         ),
@@ -71,6 +75,7 @@ class ComposerStaticInit16526197d41008a0d01ad0f44b1d1afc
         'M' => 
         array (
             'Monolog\\' => 8,
+            'MartinGeorgiev\\' => 15,
         ),
         'L' => 
         array (
@@ -88,6 +93,15 @@ class ComposerStaticInit16526197d41008a0d01ad0f44b1d1afc
             'Ivory\\CKEditorBundle\\' => 21,
             'Incenteev\\ParameterHandler\\' => 27,
         ),
+        'H' => 
+        array (
+            'Http\\Promise\\' => 13,
+            'Http\\Message\\' => 13,
+            'Http\\Discovery\\' => 15,
+            'Http\\Client\\Curl\\' => 17,
+            'Http\\Client\\' => 12,
+            'Happyr\\LinkedIn\\' => 16,
+        ),
         'G' => 
         array (
             'Gregwar\\CaptchaBundle\\' => 22,
@@ -96,6 +110,7 @@ class ComposerStaticInit16526197d41008a0d01ad0f44b1d1afc
         'F' => 
         array (
             'Fig\\Link\\' => 9,
+            'Facebook\\' => 9,
             'FOS\\UserBundle\\' => 15,
         ),
         'E' => 
@@ -115,6 +130,11 @@ class ComposerStaticInit16526197d41008a0d01ad0f44b1d1afc
         'C' => 
         array (
             'Composer\\CaBundle\\' => 18,
+            'Clue\\StreamFilter\\' => 18,
+        ),
+        'A' => 
+        array (
+            'Abraham\\TwitterOAuth\\' => 21,
         ),
     );
 
@@ -227,6 +247,10 @@ class ComposerStaticInit16526197d41008a0d01ad0f44b1d1afc
         array (
             0 => __DIR__ . '/..' . '/psr/link/src',
         ),
+        'Psr\\Http\\Message\\' => 
+        array (
+            0 => __DIR__ . '/..' . '/psr/http-message/src',
+        ),
         'Psr\\Container\\' => 
         array (
             0 => __DIR__ . '/..' . '/psr/container/src',
@@ -242,6 +266,11 @@ class ComposerStaticInit16526197d41008a0d01ad0f44b1d1afc
         'Monolog\\' => 
         array (
             0 => __DIR__ . '/..' . '/monolog/monolog/src/Monolog',
+        ),
+        'MartinGeorgiev\\' => 
+        array (
+            0 => __DIR__ . '/..' . '/martin-georgiev/social-post/src/MartinGeorgiev',
+            1 => __DIR__ . '/..' . '/martin-georgiev/social-post-bundle/src/MartinGeorgiev',
         ),
         'League\\Csv\\' => 
         array (
@@ -271,6 +300,31 @@ class ComposerStaticInit16526197d41008a0d01ad0f44b1d1afc
         array (
             0 => __DIR__ . '/..' . '/incenteev/composer-parameter-handler',
         ),
+        'Http\\Promise\\' => 
+        array (
+            0 => __DIR__ . '/..' . '/php-http/promise/src',
+        ),
+        'Http\\Message\\' => 
+        array (
+            0 => __DIR__ . '/..' . '/php-http/message/src',
+            1 => __DIR__ . '/..' . '/php-http/message-factory/src',
+        ),
+        'Http\\Discovery\\' => 
+        array (
+            0 => __DIR__ . '/..' . '/php-http/discovery/src',
+        ),
+        'Http\\Client\\Curl\\' => 
+        array (
+            0 => __DIR__ . '/..' . '/php-http/curl-client/src',
+        ),
+        'Http\\Client\\' => 
+        array (
+            0 => __DIR__ . '/..' . '/php-http/httplug/src',
+        ),
+        'Happyr\\LinkedIn\\' => 
+        array (
+            0 => __DIR__ . '/..' . '/happyr/linkedin-api-client/src',
+        ),
         'Gregwar\\CaptchaBundle\\' => 
         array (
             0 => __DIR__ . '/..' . '/gregwar/captcha-bundle',
@@ -282,6 +336,10 @@ class ComposerStaticInit16526197d41008a0d01ad0f44b1d1afc
         'Fig\\Link\\' => 
         array (
             0 => __DIR__ . '/..' . '/fig/link-util/src',
+        ),
+        'Facebook\\' => 
+        array (
+            0 => __DIR__ . '/..' . '/facebook/graph-sdk/src/Facebook',
         ),
         'FOS\\UserBundle\\' => 
         array (
@@ -322,6 +380,14 @@ class ComposerStaticInit16526197d41008a0d01ad0f44b1d1afc
         'Composer\\CaBundle\\' => 
         array (
             0 => __DIR__ . '/..' . '/composer/ca-bundle/src',
+        ),
+        'Clue\\StreamFilter\\' => 
+        array (
+            0 => __DIR__ . '/..' . '/clue/stream-filter/src',
+        ),
+        'Abraham\\TwitterOAuth\\' => 
+        array (
+            0 => __DIR__ . '/..' . '/abraham/twitteroauth/src',
         ),
     );
 

@@ -1,0 +1,55 @@
+{% extends 'AgentFinancier.html.twig' %}
+
+{% block body %}
+<div class="card">
+    <div class="card-body">
+        <h1>Factures list</h1>
+
+        <table style="border-color:#ffffff"class="table table-hover table-bordered" id="dataTables-example">
+            <thead>
+            <tr>
+                <th>Reference</th>
+                <th>Statutfacture</th>
+                <th>Totalht</th>
+                <th>Totalttc</th>
+                <th>Echeance</th>
+                <th>Datefact</th>
+                <th>Actions</th>
+            </tr>
+            </thead>
+            <tbody>
+            {% for facture in factures %}
+                <tr>
+                    <td>{{ facture.reference }}</td>
+                    <td>{{ facture.statutFacture }}</td>
+                    <td>{{ facture.totalHT }}</td>
+                    <td>{{ facture.totalTTC }}</td>
+                    <td>{{ facture.echeance }}</td>
+                    <td>{% if facture.dateFact %}{{ facture.dateFact|date('Y-m-d H:i:s') }}{% endif %}</td>
+                    <td>
+                        <ul>
+                            <li>
+                                <a href="{{ path('facture_show', { 'id': facture.id }) }}">show</a>
+                            </li>
+                            <li>
+                                <a href="{{ path('facture_edit', { 'id': facture.id }) }}">edit</a>
+                            </li>
+                            <li>
+                                <a href="{{ path('pdf_generate_facture', { 'id': facture.id }) }}">pdf</a>
+                            </li>
+                        </ul>
+                    </td>
+                </tr>
+            {% endfor %}
+            </tbody>
+        </table>
+
+        <ul>
+            <li>
+                <a href="{{ path('facture_new') }}" class="btn btn-warning">Create a new facture</a>
+            </li>
+        </ul>
+    </div>
+</div>
+
+{% endblock %}

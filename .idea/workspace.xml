@@ -2,14 +2,383 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="e5162f79-f56f-4f38-baf5-0695c72905b1" name="Default" comment="">
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/abraham/twitteroauth/tests/kitten.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/abraham/twitteroauth/tests/video.mp4" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/Resources/views/facture/edit.html.twig" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/Resources/views/facture/index.html.twig" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/Resources/views/facture/new.html.twig" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/Resources/views/facture/show.html.twig" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/Resources/views/paiement/edit.html.twig" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/Resources/views/paiement/index.html.twig" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/Resources/views/paiement/new.html.twig" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/Resources/views/paiement/show.html.twig" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/BackendBundle/Controller/FactureController.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/BackendBundle/Controller/PaiementController.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/BackendBundle/Entity/Facture.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/BackendBundle/Entity/Paiement.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/BackendBundle/Form/FactureType.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/BackendBundle/Form/PaiementType.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/BackendBundle/Repository/FactureRepository.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/BackendBundle/Repository/PaiementRepository.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/BackendBundle/Resources/config/routing/facture.yml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/BackendBundle/Resources/config/routing/paiement.yml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/BackendBundle/Resources/views/Facture/pdf.html.twig" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/BackendBundle/Tests/Controller/FactureControllerTest.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/BackendBundle/Tests/Controller/PaiementControllerTest.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/abraham/twitteroauth/.gitignore" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/abraham/twitteroauth/.travis.yml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/abraham/twitteroauth/CODE_OF_CONDUCT.md" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/abraham/twitteroauth/LICENSE.md" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/abraham/twitteroauth/README.md" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/abraham/twitteroauth/autoload.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/abraham/twitteroauth/composer.json" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/abraham/twitteroauth/phpmd.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/abraham/twitteroauth/phpunit.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/abraham/twitteroauth/src/Config.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/abraham/twitteroauth/src/Consumer.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/abraham/twitteroauth/src/HmacSha1.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/abraham/twitteroauth/src/Request.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/abraham/twitteroauth/src/Response.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/abraham/twitteroauth/src/SignatureMethod.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/abraham/twitteroauth/src/Token.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/abraham/twitteroauth/src/TwitterOAuth.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/abraham/twitteroauth/src/TwitterOAuthException.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/abraham/twitteroauth/src/Util.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/abraham/twitteroauth/src/Util/JsonDecoder.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/abraham/twitteroauth/src/cacert.pem" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/abraham/twitteroauth/tests/AbstractSignatureMethodTest.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/abraham/twitteroauth/tests/ConsumerTest.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/abraham/twitteroauth/tests/HmacSha1Test.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/abraham/twitteroauth/tests/TokenTest.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/abraham/twitteroauth/tests/TwitterOAuthTest.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/abraham/twitteroauth/tests/Util/JsonDecoderTest.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/abraham/twitteroauth/tests/bootstrap.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/abraham/twitteroauth/tests/sample_env" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/clue/stream-filter/.gitignore" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/clue/stream-filter/.travis.yml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/clue/stream-filter/CHANGELOG.md" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/clue/stream-filter/LICENSE" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/clue/stream-filter/README.md" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/clue/stream-filter/composer.json" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/clue/stream-filter/examples/base64_decode.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/clue/stream-filter/examples/base64_encode.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/clue/stream-filter/examples/uppercase.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/clue/stream-filter/phpunit.xml.dist" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/clue/stream-filter/src/CallbackFilter.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/clue/stream-filter/src/functions.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/clue/stream-filter/src/functions_include.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/clue/stream-filter/tests/FilterTest.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/clue/stream-filter/tests/FunTest.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/clue/stream-filter/tests/FunZlibTest.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/facebook/graph-sdk/CODE_OF_CONDUCT.md" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/facebook/graph-sdk/LICENSE" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/facebook/graph-sdk/composer.json" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/facebook/graph-sdk/phpcs.xml.dist" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/facebook/graph-sdk/src/Facebook/Authentication/AccessToken.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/facebook/graph-sdk/src/Facebook/Authentication/AccessTokenMetadata.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/facebook/graph-sdk/src/Facebook/Authentication/OAuth2Client.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/facebook/graph-sdk/src/Facebook/Exceptions/FacebookAuthenticationException.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/facebook/graph-sdk/src/Facebook/Exceptions/FacebookAuthorizationException.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/facebook/graph-sdk/src/Facebook/Exceptions/FacebookClientException.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/facebook/graph-sdk/src/Facebook/Exceptions/FacebookOtherException.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/facebook/graph-sdk/src/Facebook/Exceptions/FacebookResponseException.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/facebook/graph-sdk/src/Facebook/Exceptions/FacebookResumableUploadException.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/facebook/graph-sdk/src/Facebook/Exceptions/FacebookSDKException.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/facebook/graph-sdk/src/Facebook/Exceptions/FacebookServerException.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/facebook/graph-sdk/src/Facebook/Exceptions/FacebookThrottleException.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/facebook/graph-sdk/src/Facebook/Facebook.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/facebook/graph-sdk/src/Facebook/FacebookApp.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/facebook/graph-sdk/src/Facebook/FacebookBatchRequest.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/facebook/graph-sdk/src/Facebook/FacebookBatchResponse.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/facebook/graph-sdk/src/Facebook/FacebookClient.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/facebook/graph-sdk/src/Facebook/FacebookRequest.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/facebook/graph-sdk/src/Facebook/FacebookResponse.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/facebook/graph-sdk/src/Facebook/FileUpload/FacebookFile.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/facebook/graph-sdk/src/Facebook/FileUpload/FacebookResumableUploader.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/facebook/graph-sdk/src/Facebook/FileUpload/FacebookTransferChunk.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/facebook/graph-sdk/src/Facebook/FileUpload/FacebookVideo.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/facebook/graph-sdk/src/Facebook/FileUpload/Mimetypes.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/facebook/graph-sdk/src/Facebook/GraphNodes/Birthday.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/facebook/graph-sdk/src/Facebook/GraphNodes/Collection.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/facebook/graph-sdk/src/Facebook/GraphNodes/GraphAchievement.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/facebook/graph-sdk/src/Facebook/GraphNodes/GraphAlbum.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/facebook/graph-sdk/src/Facebook/GraphNodes/GraphApplication.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/facebook/graph-sdk/src/Facebook/GraphNodes/GraphCoverPhoto.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/facebook/graph-sdk/src/Facebook/GraphNodes/GraphEdge.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/facebook/graph-sdk/src/Facebook/GraphNodes/GraphEvent.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/facebook/graph-sdk/src/Facebook/GraphNodes/GraphGroup.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/facebook/graph-sdk/src/Facebook/GraphNodes/GraphList.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/facebook/graph-sdk/src/Facebook/GraphNodes/GraphLocation.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/facebook/graph-sdk/src/Facebook/GraphNodes/GraphNode.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/facebook/graph-sdk/src/Facebook/GraphNodes/GraphNodeFactory.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/facebook/graph-sdk/src/Facebook/GraphNodes/GraphObject.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/facebook/graph-sdk/src/Facebook/GraphNodes/GraphObjectFactory.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/facebook/graph-sdk/src/Facebook/GraphNodes/GraphPage.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/facebook/graph-sdk/src/Facebook/GraphNodes/GraphPicture.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/facebook/graph-sdk/src/Facebook/GraphNodes/GraphSessionInfo.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/facebook/graph-sdk/src/Facebook/GraphNodes/GraphUser.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/facebook/graph-sdk/src/Facebook/Helpers/FacebookCanvasHelper.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/facebook/graph-sdk/src/Facebook/Helpers/FacebookJavaScriptHelper.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/facebook/graph-sdk/src/Facebook/Helpers/FacebookPageTabHelper.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/facebook/graph-sdk/src/Facebook/Helpers/FacebookRedirectLoginHelper.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/facebook/graph-sdk/src/Facebook/Helpers/FacebookSignedRequestFromInputHelper.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/facebook/graph-sdk/src/Facebook/Http/GraphRawResponse.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/facebook/graph-sdk/src/Facebook/Http/RequestBodyInterface.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/facebook/graph-sdk/src/Facebook/Http/RequestBodyMultipart.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/facebook/graph-sdk/src/Facebook/Http/RequestBodyUrlEncoded.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/facebook/graph-sdk/src/Facebook/HttpClients/FacebookCurl.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/facebook/graph-sdk/src/Facebook/HttpClients/FacebookCurlHttpClient.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/facebook/graph-sdk/src/Facebook/HttpClients/FacebookGuzzleHttpClient.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/facebook/graph-sdk/src/Facebook/HttpClients/FacebookHttpClientInterface.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/facebook/graph-sdk/src/Facebook/HttpClients/FacebookStream.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/facebook/graph-sdk/src/Facebook/HttpClients/FacebookStreamHttpClient.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/facebook/graph-sdk/src/Facebook/HttpClients/HttpClientsFactory.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/facebook/graph-sdk/src/Facebook/HttpClients/certs/DigiCertHighAssuranceEVRootCA.pem" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/facebook/graph-sdk/src/Facebook/PersistentData/FacebookMemoryPersistentDataHandler.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/facebook/graph-sdk/src/Facebook/PersistentData/FacebookSessionPersistentDataHandler.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/facebook/graph-sdk/src/Facebook/PersistentData/PersistentDataFactory.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/facebook/graph-sdk/src/Facebook/PersistentData/PersistentDataInterface.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/facebook/graph-sdk/src/Facebook/PseudoRandomString/McryptPseudoRandomStringGenerator.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/facebook/graph-sdk/src/Facebook/PseudoRandomString/OpenSslPseudoRandomStringGenerator.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/facebook/graph-sdk/src/Facebook/PseudoRandomString/PseudoRandomStringGeneratorFactory.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/facebook/graph-sdk/src/Facebook/PseudoRandomString/PseudoRandomStringGeneratorInterface.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/facebook/graph-sdk/src/Facebook/PseudoRandomString/PseudoRandomStringGeneratorTrait.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/facebook/graph-sdk/src/Facebook/PseudoRandomString/RandomBytesPseudoRandomStringGenerator.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/facebook/graph-sdk/src/Facebook/PseudoRandomString/UrandomPseudoRandomStringGenerator.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/facebook/graph-sdk/src/Facebook/SignedRequest.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/facebook/graph-sdk/src/Facebook/Url/FacebookUrlDetectionHandler.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/facebook/graph-sdk/src/Facebook/Url/FacebookUrlManipulator.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/facebook/graph-sdk/src/Facebook/Url/UrlDetectionInterface.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/facebook/graph-sdk/src/Facebook/autoload.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/facebook/graph-sdk/src/Facebook/polyfills.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/happyr/linkedin-api-client/.github/ISSUE_TEMPLATE.md" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/happyr/linkedin-api-client/.github/PULL_REQUEST_TEMPLATE.md" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/happyr/linkedin-api-client/.gitignore" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/happyr/linkedin-api-client/.scrutinizer.yml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/happyr/linkedin-api-client/.styleci.yml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/happyr/linkedin-api-client/.travis.yml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/happyr/linkedin-api-client/LICENSE" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/happyr/linkedin-api-client/Readme.md" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/happyr/linkedin-api-client/Upgrade.md" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/happyr/linkedin-api-client/composer.json" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/happyr/linkedin-api-client/phpunit.xml.dist" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/happyr/linkedin-api-client/src/AccessToken.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/happyr/linkedin-api-client/src/Authenticator.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/happyr/linkedin-api-client/src/AuthenticatorInterface.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/happyr/linkedin-api-client/src/Exception/InvalidArgumentException.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/happyr/linkedin-api-client/src/Exception/LinkedInException.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/happyr/linkedin-api-client/src/Exception/LinkedInTransferException.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/happyr/linkedin-api-client/src/Exception/LoginError.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/happyr/linkedin-api-client/src/Http/CurrentUrlGeneratorInterface.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/happyr/linkedin-api-client/src/Http/GlobalVariableGetter.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/happyr/linkedin-api-client/src/Http/LinkedInUrlGeneratorInterface.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/happyr/linkedin-api-client/src/Http/RequestManager.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/happyr/linkedin-api-client/src/Http/RequestManagerInterface.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/happyr/linkedin-api-client/src/Http/ResponseConverter.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/happyr/linkedin-api-client/src/Http/UrlGenerator.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/happyr/linkedin-api-client/src/Http/UrlGeneratorInterface.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/happyr/linkedin-api-client/src/LinkedIn.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/happyr/linkedin-api-client/src/LinkedInInterface.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/happyr/linkedin-api-client/src/Storage/BaseDataStorage.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/happyr/linkedin-api-client/src/Storage/DataStorageInterface.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/happyr/linkedin-api-client/src/Storage/IlluminateSessionStorage.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/happyr/linkedin-api-client/src/Storage/SessionStorage.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/happyr/linkedin-api-client/tests/AccessTokenTest.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/happyr/linkedin-api-client/tests/AuthenticatorTest.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/happyr/linkedin-api-client/tests/Exceptions/LoginErrorTest.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/happyr/linkedin-api-client/tests/Http/ResponseConverterTest.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/happyr/linkedin-api-client/tests/Http/UrlGeneratorTest.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/happyr/linkedin-api-client/tests/LinkedInTest.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/happyr/linkedin-api-client/tests/Storage/IlluminateSessionStorageTest.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/happyr/linkedin-api-client/tests/Storage/SessionStorageTest.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/martin-georgiev/social-post-bundle/.gitignore" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/martin-georgiev/social-post-bundle/.php_cs" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/martin-georgiev/social-post-bundle/.scrutinizer.yml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/martin-georgiev/social-post-bundle/.travis.yml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/martin-georgiev/social-post-bundle/LICENSE" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/martin-georgiev/social-post-bundle/README.md" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/martin-georgiev/social-post-bundle/UPGRADE-GUIDE.md" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/martin-georgiev/social-post-bundle/composer.json" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/martin-georgiev/social-post-bundle/phpstan.neon" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/martin-georgiev/social-post-bundle/phpunit.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/martin-georgiev/social-post-bundle/src/MartinGeorgiev/SocialPostBundle/DependencyInjection/Compiler/AllInOnePass.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/martin-georgiev/social-post-bundle/src/MartinGeorgiev/SocialPostBundle/DependencyInjection/Configuration.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/martin-georgiev/social-post-bundle/src/MartinGeorgiev/SocialPostBundle/DependencyInjection/SocialPostExtension.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/martin-georgiev/social-post-bundle/src/MartinGeorgiev/SocialPostBundle/Resources/config/service/all_in_one.yml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/martin-georgiev/social-post-bundle/src/MartinGeorgiev/SocialPostBundle/Resources/config/service/facebook.yml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/martin-georgiev/social-post-bundle/src/MartinGeorgiev/SocialPostBundle/Resources/config/service/linkedin.yml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/martin-georgiev/social-post-bundle/src/MartinGeorgiev/SocialPostBundle/Resources/config/service/twitter.yml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/martin-georgiev/social-post-bundle/src/MartinGeorgiev/SocialPostBundle/SocialPostBundle.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/martin-georgiev/social-post-bundle/tests/MartinGeorgiev/SocialPostBundle/DependecyInjection/SocialPostExtensionTest.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/martin-georgiev/social-post-bundle/tests/MartinGeorgiev/SocialPostBundle/SocialPostBundleTest.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/martin-georgiev/social-post/.gitignore" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/martin-georgiev/social-post/.php_cs" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/martin-georgiev/social-post/.scrutinizer.yml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/martin-georgiev/social-post/.travis.yml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/martin-georgiev/social-post/LICENSE" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/martin-georgiev/social-post/README.md" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/martin-georgiev/social-post/composer.json" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/martin-georgiev/social-post/phpunit.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/martin-georgiev/social-post/src/MartinGeorgiev/SocialPost/Message.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/martin-georgiev/social-post/src/MartinGeorgiev/SocialPost/Publisher.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/martin-georgiev/social-post/src/MartinGeorgiev/SocialPost/SocialNetwork/AllInOne.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/martin-georgiev/social-post/src/MartinGeorgiev/SocialPost/SocialNetwork/Enum.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/martin-georgiev/social-post/src/MartinGeorgiev/SocialPost/SocialNetwork/Exception/FailureWhenPublishingMessage.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/martin-georgiev/social-post/src/MartinGeorgiev/SocialPost/SocialNetwork/Exception/MessageNotIntendedForPublisher.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/martin-georgiev/social-post/src/MartinGeorgiev/SocialPost/SocialNetwork/Facebook/SDK5.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/martin-georgiev/social-post/src/MartinGeorgiev/SocialPost/SocialNetwork/LinkedIn/HappyrLinkedInApiClient.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/martin-georgiev/social-post/src/MartinGeorgiev/SocialPost/SocialNetwork/Twitter/TwitterOAuth07.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/martin-georgiev/social-post/tests/MartinGeorgiev/SocialPost/MessageTest.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/martin-georgiev/social-post/tests/MartinGeorgiev/SocialPost/SocialNetwork/AllInOneTest.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/martin-georgiev/social-post/tests/MartinGeorgiev/SocialPost/SocialNetwork/Exception/FailureWhenPublishingMessageTest.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/martin-georgiev/social-post/tests/MartinGeorgiev/SocialPost/SocialNetwork/Exception/MessageNotIntendedForPublisherTest.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/martin-georgiev/social-post/tests/MartinGeorgiev/SocialPost/SocialNetwork/Facebook/SDK5Test.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/martin-georgiev/social-post/tests/MartinGeorgiev/SocialPost/SocialNetwork/LinkedIn/HappyrLinkedInApiClientTest.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/martin-georgiev/social-post/tests/MartinGeorgiev/SocialPost/SocialNetwork/Twitter/TwitterOAuth07Test.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/php-http/curl-client/.php_cs" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/php-http/curl-client/.styleci.yml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/php-http/curl-client/CHANGELOG.md" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/php-http/curl-client/LICENSE" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/php-http/curl-client/README.md" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/php-http/curl-client/composer.json" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/php-http/curl-client/puli.json" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/php-http/curl-client/src/Client.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/php-http/curl-client/src/CurlPromise.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/php-http/curl-client/src/MultiRunner.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/php-http/curl-client/src/PromiseCore.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/php-http/curl-client/src/ResponseBuilder.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/php-http/discovery/CHANGELOG.md" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/php-http/discovery/LICENSE" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/php-http/discovery/README.md" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/php-http/discovery/composer.json" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/php-http/discovery/src/ClassDiscovery.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/php-http/discovery/src/Exception.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/php-http/discovery/src/Exception/ClassInstantiationFailedException.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/php-http/discovery/src/Exception/DiscoveryFailedException.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/php-http/discovery/src/Exception/NoCandidateFoundException.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/php-http/discovery/src/Exception/NotFoundException.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/php-http/discovery/src/Exception/PuliUnavailableException.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/php-http/discovery/src/Exception/StrategyUnavailableException.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/php-http/discovery/src/HttpAsyncClientDiscovery.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/php-http/discovery/src/HttpClientDiscovery.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/php-http/discovery/src/MessageFactoryDiscovery.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/php-http/discovery/src/NotFoundException.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/php-http/discovery/src/Psr17FactoryDiscovery.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/php-http/discovery/src/Psr18ClientDiscovery.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/php-http/discovery/src/Strategy/CommonClassesStrategy.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/php-http/discovery/src/Strategy/CommonPsr17ClassesStrategy.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/php-http/discovery/src/Strategy/DiscoveryStrategy.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/php-http/discovery/src/Strategy/MockClientStrategy.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/php-http/discovery/src/Strategy/PuliBetaStrategy.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/php-http/discovery/src/StreamFactoryDiscovery.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/php-http/discovery/src/UriFactoryDiscovery.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/php-http/httplug/CHANGELOG.md" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/php-http/httplug/LICENSE" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/php-http/httplug/README.md" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/php-http/httplug/composer.json" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/php-http/httplug/puli.json" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/php-http/httplug/src/Exception.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/php-http/httplug/src/Exception/HttpException.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/php-http/httplug/src/Exception/NetworkException.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/php-http/httplug/src/Exception/RequestException.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/php-http/httplug/src/Exception/TransferException.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/php-http/httplug/src/HttpAsyncClient.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/php-http/httplug/src/HttpClient.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/php-http/httplug/src/Promise/HttpFulfilledPromise.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/php-http/httplug/src/Promise/HttpRejectedPromise.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/php-http/message-factory/CHANGELOG.md" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/php-http/message-factory/LICENSE" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/php-http/message-factory/README.md" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/php-http/message-factory/composer.json" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/php-http/message-factory/puli.json" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/php-http/message-factory/src/MessageFactory.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/php-http/message-factory/src/RequestFactory.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/php-http/message-factory/src/ResponseFactory.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/php-http/message-factory/src/StreamFactory.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/php-http/message-factory/src/UriFactory.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/php-http/message/CHANGELOG.md" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/php-http/message/LICENSE" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/php-http/message/README.md" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/php-http/message/apigen.neon" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/php-http/message/composer.json" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/php-http/message/puli.json" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/php-http/message/src/Authentication.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/php-http/message/src/Authentication/AutoBasicAuth.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/php-http/message/src/Authentication/BasicAuth.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/php-http/message/src/Authentication/Bearer.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/php-http/message/src/Authentication/Chain.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/php-http/message/src/Authentication/Matching.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/php-http/message/src/Authentication/QueryParam.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/php-http/message/src/Authentication/RequestConditional.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/php-http/message/src/Authentication/Wsse.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/php-http/message/src/Builder/ResponseBuilder.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/php-http/message/src/Cookie.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/php-http/message/src/CookieJar.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/php-http/message/src/CookieUtil.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/php-http/message/src/Decorator/MessageDecorator.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/php-http/message/src/Decorator/RequestDecorator.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/php-http/message/src/Decorator/ResponseDecorator.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/php-http/message/src/Decorator/StreamDecorator.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/php-http/message/src/Encoding/ChunkStream.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/php-http/message/src/Encoding/CompressStream.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/php-http/message/src/Encoding/DechunkStream.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/php-http/message/src/Encoding/DecompressStream.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/php-http/message/src/Encoding/DeflateStream.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/php-http/message/src/Encoding/Filter/Chunk.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/php-http/message/src/Encoding/FilteredStream.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/php-http/message/src/Encoding/GzipDecodeStream.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/php-http/message/src/Encoding/GzipEncodeStream.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/php-http/message/src/Encoding/InflateStream.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/php-http/message/src/Exception.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/php-http/message/src/Exception/UnexpectedValueException.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/php-http/message/src/Formatter.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/php-http/message/src/Formatter/CurlCommandFormatter.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/php-http/message/src/Formatter/FullHttpMessageFormatter.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/php-http/message/src/Formatter/SimpleFormatter.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/php-http/message/src/MessageFactory/DiactorosMessageFactory.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/php-http/message/src/MessageFactory/GuzzleMessageFactory.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/php-http/message/src/MessageFactory/SlimMessageFactory.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/php-http/message/src/RequestMatcher.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/php-http/message/src/RequestMatcher/CallbackRequestMatcher.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/php-http/message/src/RequestMatcher/RegexRequestMatcher.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/php-http/message/src/RequestMatcher/RequestMatcher.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/php-http/message/src/Stream/BufferedStream.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/php-http/message/src/StreamFactory/DiactorosStreamFactory.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/php-http/message/src/StreamFactory/GuzzleStreamFactory.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/php-http/message/src/StreamFactory/SlimStreamFactory.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/php-http/message/src/UriFactory/DiactorosUriFactory.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/php-http/message/src/UriFactory/GuzzleUriFactory.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/php-http/message/src/UriFactory/SlimUriFactory.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/php-http/message/src/filters.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/php-http/promise/CHANGELOG.md" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/php-http/promise/LICENSE" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/php-http/promise/README.md" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/php-http/promise/composer.json" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/php-http/promise/src/FulfilledPromise.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/php-http/promise/src/Promise.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/php-http/promise/src/RejectedPromise.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/psr/http-message/CHANGELOG.md" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/psr/http-message/LICENSE" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/psr/http-message/README.md" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/psr/http-message/composer.json" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/psr/http-message/src/MessageInterface.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/psr/http-message/src/RequestInterface.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/psr/http-message/src/ResponseInterface.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/psr/http-message/src/ServerRequestInterface.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/psr/http-message/src/StreamInterface.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/psr/http-message/src/UploadedFileInterface.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/psr/http-message/src/UriInterface.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/pidev.iml" afterPath="$PROJECT_DIR$/.idea/pidev.iml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/AppKernel.php" afterPath="$PROJECT_DIR$/app/AppKernel.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/config/config.yml" afterPath="$PROJECT_DIR$/app/config/config.yml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/Resources/views/AgentFinancier.html.twig" afterPath="$PROJECT_DIR$/app/Resources/views/AgentFinancier.html.twig" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/composer.json" afterPath="$PROJECT_DIR$/composer.json" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/composer.lock" afterPath="$PROJECT_DIR$/composer.lock" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/BackendBundle/Controller/DeliveryController.php" afterPath="$PROJECT_DIR$/src/BackendBundle/Controller/DeliveryController.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/BackendBundle/Controller/ReclamationController.php" afterPath="$PROJECT_DIR$/src/BackendBundle/Controller/ReclamationController.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/BackendBundle/Resources/config/routing.yml" afterPath="$PROJECT_DIR$/src/BackendBundle/Resources/config/routing.yml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/BackendBundle/Resources/views/Reclamation/adminManager.html.twig" afterPath="$PROJECT_DIR$/src/BackendBundle/Resources/views/Reclamation/adminManager.html.twig" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/composer/autoload_files.php" afterPath="$PROJECT_DIR$/vendor/composer/autoload_files.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/composer/autoload_psr4.php" afterPath="$PROJECT_DIR$/vendor/composer/autoload_psr4.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/composer/autoload_static.php" afterPath="$PROJECT_DIR$/vendor/composer/autoload_static.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/composer/installed.json" afterPath="$PROJECT_DIR$/vendor/composer/installed.json" />
@@ -28,67 +397,77 @@
   <component name="ExecutionTargetManager" SELECTED_TARGET="default_target" />
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="ReclamationController.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/BackendBundle/Controller/ReclamationController.php">
+      <file leaf-file-name="index.html.twig" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/Resources/views/facture/index.html.twig">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="319">
-              <caret line="25" column="5" lean-forward="false" selection-start-line="25" selection-start-column="5" selection-end-line="25" selection-end-column="5" />
+            <state relative-caret-position="629">
+              <caret line="37" column="70" lean-forward="false" selection-start-line="37" selection-start-column="70" selection-end-line="37" selection-end-column="70" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="FactureController.php" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/BackendBundle/Controller/FactureController.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="17">
+              <caret line="99" column="11" lean-forward="false" selection-start-line="99" selection-start-column="11" selection-end-line="99" selection-end-column="11" />
               <folding>
-                <element signature="e#44#81#0#PHP" expanded="true" />
+                <element signature="e#44#77#0#PHP" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="adminManager.html.twig" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/BackendBundle/Resources/views/Reclamation/adminManager.html.twig">
+      <file leaf-file-name="routing.yml" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/BackendBundle/Resources/config/routing.yml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="2482">
+              <caret line="146" column="0" lean-forward="false" selection-start-line="146" selection-start-column="0" selection-end-line="146" selection-end-column="20" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="pdf.html.twig" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/BackendBundle/Resources/views/Facture/pdf.html.twig">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="390">
+              <caret line="77" column="9" lean-forward="true" selection-start-line="77" selection-start-column="9" selection-end-line="77" selection-end-column="9" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="show.html.twig" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/Resources/views/fournisseur/show.html.twig">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="510">
+              <caret line="30" column="21" lean-forward="false" selection-start-line="7" selection-start-column="16" selection-end-line="30" selection-end-column="21" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="show.html.twig" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/Resources/views/facture/show.html.twig">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="799">
+              <caret line="47" column="17" lean-forward="false" selection-start-line="8" selection-start-column="12" selection-end-line="47" selection-end-column="17" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="AchatController.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/BackendBundle/Controller/AchatController.php">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="221">
-              <caret line="13" column="38" lean-forward="false" selection-start-line="13" selection-start-column="38" selection-end-line="13" selection-end-column="38" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="AppKernel.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/AppKernel.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="98">
-              <caret line="16" column="64" lean-forward="false" selection-start-line="16" selection-start-column="64" selection-end-line="16" selection-end-column="64" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="composer.json" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/composer.json">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="119">
-              <caret line="7" column="21" lean-forward="false" selection-start-line="7" selection-start-column="21" selection-end-line="7" selection-end-column="21" />
+              <caret line="13" column="29" lean-forward="false" selection-start-line="13" selection-start-column="0" selection-end-line="14" selection-end-column="0" />
               <folding>
-                <marker date="1586895765417" expanded="true" signature="0:2596" ph="{&quot;name&quot;: &quot;symfony/framework-standard-edition&quot;...}" />
-                <marker date="1586895765417" expanded="true" signature="499:1216" ph="{&quot;php&quot;: &quot;&gt;=5.5.9&quot;...}" />
-                <marker date="1586895765417" expanded="true" signature="1237:1328" ph="{&quot;sensio/generator-bundle&quot;: &quot;^3.0&quot;...}" />
-                <marker date="1586895765417" expanded="true" signature="1345:2076" ph="{...}" />
-                <marker date="1586895765417" expanded="true" signature="1374:1927" ph="[...]" />
-                <marker date="1586895765417" expanded="true" signature="1957:1999" ph="[...]" />
-                <marker date="1586895765417" expanded="true" signature="2028:2070" ph="[...]" />
-                <marker date="1586895765417" expanded="true" signature="2092:2187" ph="{&quot;sort-packages&quot;: true...}" />
-                <marker date="1586895765417" expanded="true" signature="2114:2150" ph="{&quot;php&quot;: &quot;5.6&quot;...}" />
-                <marker date="1586895765417" expanded="true" signature="2202:2594" ph="{&quot;symfony-app-dir&quot;: &quot;app&quot;...}" />
-                <marker date="1586895765417" expanded="true" signature="2456:2515" ph="{&quot;file&quot;: &quot;app/config/parameters.yml&quot;...}" />
-                <marker date="1586895765417" expanded="true" signature="2541:2588" ph="{&quot;dev-master&quot;: &quot;3.4-dev&quot;...}" />
+                <marker date="1586469181959" expanded="true" signature="2959:3096" ph="SELECT DATE_... achat" />
+                <marker date="1586469181959" expanded="true" signature="3122:3221" ph="SELECT clien... achat" />
               </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="config.yml" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/app/config/config.yml">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="166">
-              <caret line="130" column="1" lean-forward="false" selection-start-line="130" selection-start-column="1" selection-end-line="130" selection-end-column="1" />
-              <folding />
             </state>
           </provider>
         </entry>
@@ -168,23 +547,9 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
-  <component name="HighlightingSettingsPerFile">
-    <setting file="mock:///Dummy.txt" root0="SKIP_INSPECTION" />
-  </component>
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/src/BackendBundle/Resources/views/Achat/addAchatFour2.html.twig" />
-        <option value="$PROJECT_DIR$/app/Resources/views/fournisseur/index.html.twig" />
-        <option value="$PROJECT_DIR$/app/Resources/views/fournisseur/edit.html.twig" />
-        <option value="$PROJECT_DIR$/app/Resources/views/fournisseur/new.html.twig" />
-        <option value="$PROJECT_DIR$/app/Resources/views/fournisseur/show.html.twig" />
-        <option value="$PROJECT_DIR$/src/BackendBundle/Resources/views/Achat/achterOne.html.twig" />
-        <option value="$PROJECT_DIR$/src/BackendBundle/Form/ProdAchatFourType.php" />
-        <option value="$PROJECT_DIR$/src/BackendBundle/Resources/views/Achat/sendMail.html.twig" />
-        <option value="$PROJECT_DIR$/src/BackendBundle/Resources/views/Achat/achterTwo.html.twig" />
-        <option value="$PROJECT_DIR$/app/Resources/views/Client.html.twig" />
-        <option value="$PROJECT_DIR$/src/BackendBundle/Entity/Reclamation.php" />
         <option value="$PROJECT_DIR$/src/BackendBundle/Form/ReclamationType.php" />
         <option value="$PROJECT_DIR$/src/BackendBundle/Entity/Task.php" />
         <option value="$PROJECT_DIR$/app/Resources/views/AdminPage.html.twig" />
@@ -211,7 +576,6 @@
         <option value="$PROJECT_DIR$/src/BackendBundle/Resources/views/Entrepot/addentrepot.html.twig" />
         <option value="$PROJECT_DIR$/src/BackendBundle/Resources/views/Entrepot/updateentrepot.html.twig" />
         <option value="$PROJECT_DIR$/src/BackendBundle/Resources/views/Entrepot/listentrepot.html.twig" />
-        <option value="$PROJECT_DIR$/src/BackendBundle/Resources/config/routing.yml" />
         <option value="$PROJECT_DIR$/src/BackendBundle/Resources/views/Vehicule/afficheV.html.twig" />
         <option value="$PROJECT_DIR$/src/BackendBundle/Resources/views/Delivery/AfficheD.html.twig" />
         <option value="$PROJECT_DIR$/src/UserBundle/Redirection/AfterLoginRedirection.php" />
@@ -221,10 +585,22 @@
         <option value="$PROJECT_DIR$/src/BackendBundle/Resources/views/Vehicule/ajoutV.html.twig" />
         <option value="$PROJECT_DIR$/src/BackendBundle/Form/DeliveryType.php" />
         <option value="$PROJECT_DIR$/src/BackendBundle/Resources/views/Delivery/AjoutD.html.twig" />
-        <option value="$PROJECT_DIR$/app/AppKernel.php" />
-        <option value="$PROJECT_DIR$/src/BackendBundle/Controller/ReclamationController.php" />
-        <option value="$PROJECT_DIR$/src/BackendBundle/Resources/views/Reclamation/adminManager.html.twig" />
         <option value="$PROJECT_DIR$/app/config/config.yml" />
+        <option value="$PROJECT_DIR$/src/BackendBundle/Controller/ReclamationController.php" />
+        <option value="$PROJECT_DIR$/composer.json" />
+        <option value="$PROJECT_DIR$/src/BackendBundle/Controller/DeliveryController.php" />
+        <option value="$PROJECT_DIR$/app/AppKernel.php" />
+        <option value="$PROJECT_DIR$/src/BackendBundle/Resources/views/Reclamation/adminManager.html.twig" />
+        <option value="$PROJECT_DIR$/src/BackendBundle/Form/PaiementType.php" />
+        <option value="$PROJECT_DIR$/app/Resources/views/facture/show.html.twig" />
+        <option value="$PROJECT_DIR$/app/Resources/views/AgentFinancier.html.twig" />
+        <option value="$PROJECT_DIR$/app/Resources/views/facture/new.html.twig" />
+        <option value="$PROJECT_DIR$/app/Resources/views/facture/edit.html.twig" />
+        <option value="$PROJECT_DIR$/src/BackendBundle/Form/FactureType.php" />
+        <option value="$PROJECT_DIR$/src/BackendBundle/Resources/config/routing.yml" />
+        <option value="$PROJECT_DIR$/app/Resources/views/facture/index.html.twig" />
+        <option value="$PROJECT_DIR$/src/BackendBundle/Controller/FactureController.php" />
+        <option value="$PROJECT_DIR$/src/BackendBundle/Resources/views/Facture/pdf.html.twig" />
       </list>
     </option>
   </component>
@@ -290,6 +666,19 @@
       <path value="$PROJECT_DIR$/vendor/egyg33k/csv-bundle" />
       <path value="$PROJECT_DIR$/vendor/twilio/sdk" />
       <path value="$PROJECT_DIR$/vendor/vresh/twilio-bundle" />
+      <path value="$PROJECT_DIR$/vendor/php-http/message-factory" />
+      <path value="$PROJECT_DIR$/vendor/martin-georgiev/social-post-bundle" />
+      <path value="$PROJECT_DIR$/vendor/martin-georgiev/social-post" />
+      <path value="$PROJECT_DIR$/vendor/php-http/httplug" />
+      <path value="$PROJECT_DIR$/vendor/php-http/curl-client" />
+      <path value="$PROJECT_DIR$/vendor/php-http/promise" />
+      <path value="$PROJECT_DIR$/vendor/php-http/message" />
+      <path value="$PROJECT_DIR$/vendor/happyr/linkedin-api-client" />
+      <path value="$PROJECT_DIR$/vendor/abraham/twitteroauth" />
+      <path value="$PROJECT_DIR$/vendor/facebook/graph-sdk" />
+      <path value="$PROJECT_DIR$/vendor/php-http/discovery" />
+      <path value="$PROJECT_DIR$/vendor/psr/http-message" />
+      <path value="$PROJECT_DIR$/vendor/clue/stream-filter" />
     </include_path>
   </component>
   <component name="ProjectFrameBounds">
@@ -336,8 +725,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scratches" />
-      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -487,40 +874,6 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="twilio" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="sdk" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="pidev" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="pidev" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="vendor" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="twilio" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="sdk" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Twilio" />
               <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
             </PATH_ELEMENT>
           </PATH>
@@ -902,6 +1255,36 @@
               <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
+              <option name="myItemId" value="Facture" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="pidev" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="pidev" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="BackendBundle" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Resources" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="views" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
               <option name="myItemId" value="Entrepot" />
               <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
             </PATH_ELEMENT>
@@ -958,7 +1341,67 @@
               <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
+              <option name="myItemId" value="views" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Achat" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="pidev" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="pidev" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="BackendBundle" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Resources" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
               <option name="myItemId" value="config" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="pidev" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="pidev" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="BackendBundle" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Resources" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="config" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="routing" />
               <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
             </PATH_ELEMENT>
           </PATH>
@@ -1108,7 +1551,59 @@
               <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
+              <option name="myItemId" value="paiement" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="pidev" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="pidev" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="app" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Resources" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="views" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
               <option name="myItemId" value="fournisseur" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="pidev" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="pidev" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="app" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Resources" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="views" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="facture" />
               <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
             </PATH_ELEMENT>
           </PATH>
@@ -1270,6 +1765,8 @@
           </PATH>
         </subPane>
       </pane>
+      <pane id="Scratches" />
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -1279,19 +1776,19 @@
     <property name="DefaultHtmlFileTemplate" value="HTML File" />
   </component>
   <component name="RecentsManager">
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="C:\xampp\htdocs\pi3\pidev\src\BackendBundle\Resources\views" />
-      <recent name="C:\xampp\htdocs\pi3\pidev\src\BackendBundle\Repository" />
-      <recent name="C:\xampp\htdocs\pi3\pidev\src\BackendBundle\Form" />
-      <recent name="C:\xampp\htdocs\pi3\pidev\src\BackendBundle\Controller" />
-      <recent name="C:\xampp\htdocs\pi3\pidev\src\BackendBundle\Entity" />
-    </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="C:\xampp\htdocs\pi3\pidev\src\BackendBundle\Entity" />
       <recent name="C:\xampp\htdocs\pi3\pidev\src\BackendBundle\Resources\views\Achat" />
       <recent name="C:\wamp64\www\pidev\src\BackendBundle\Resources\views" />
       <recent name="C:\wamp64\www\pidev\app\Resources\FOSUserBundle\views" />
       <recent name="C:\wamp64\www\pidev\app\Resources\views" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\xampp\htdocs\pi3\pidev\src\BackendBundle\Resources\views\Facture" />
+      <recent name="C:\xampp\htdocs\pi3\pidev\src\BackendBundle\Repository" />
+      <recent name="C:\xampp\htdocs\pi3\pidev\app\Resources\views" />
+      <recent name="C:\xampp\htdocs\pi3\pidev\src\BackendBundle\Entity" />
+      <recent name="C:\xampp\htdocs\pi3\pidev\src\BackendBundle\Resources\views" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -1432,12 +1929,16 @@
       <workItem from="1586502716657" duration="1209000" />
       <workItem from="1586592284870" duration="632000" />
       <workItem from="1586807016479" duration="6979000" />
-      <workItem from="1586893692589" duration="3361000" />
+      <workItem from="1586893692589" duration="5559000" />
+      <workItem from="1586970423560" duration="6272000" />
+      <workItem from="1587019095216" duration="602000" />
+      <workItem from="1587066853914" duration="7625000" />
+      <workItem from="1587110460944" duration="229000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="572868000" />
+    <option name="totallyTimeSpent" value="589794000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -1449,24 +1950,24 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1040" height="744" extended-state="6" />
+    <frame x="-8" y="-8" width="1040" height="744" extended-state="0" />
     <editor active="true" />
     <layout>
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.3377551" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.36632654" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3289689" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32954547" sideWeight="0.52335066" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Command Line Tools Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.33387887" sideWeight="0.47664937" order="10" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.24962178" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3289689" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Command Line Tools Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.33387887" sideWeight="0.47664937" order="10" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.01309329" sideWeight="0.48554486" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
@@ -1505,142 +2006,10 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/BackendBundle/Controller/StockController.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/BackendBundle/Entity/Stock.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/BackendBundle/Repository/StockRepository.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/BackendBundle/Resources/views/Achat/achterOne.html.twig">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="26" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="1" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/BackendBundle/Resources/views/Stock/updatestock.html.twig">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="132">
-          <caret line="9" column="39" lean-forward="false" selection-start-line="9" selection-start-column="39" selection-end-line="9" selection-end-column="39" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/BackendBundle/Resources/views/Stock/liststock.html.twig">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="353">
-          <caret line="35" column="20" lean-forward="false" selection-start-line="7" selection-start-column="11" selection-end-line="35" selection-end-column="20" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/BackendBundle/Resources/views/Achat/panier.html.twig">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="322">
-          <caret line="58" column="22" lean-forward="false" selection-start-line="58" selection-start-column="22" selection-end-line="58" selection-end-column="22" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/BackendBundle/Resources/views/Achat/edit.html.twig">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="255">
-          <caret line="15" column="10" lean-forward="false" selection-start-line="15" selection-start-column="10" selection-end-line="15" selection-end-column="10" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/BackendBundle/Resources/views/Achat/read.html.twig">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="340">
-          <caret line="20" column="38" lean-forward="false" selection-start-line="20" selection-start-column="38" selection-end-line="20" selection-end-column="38" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/BackendBundle/Resources/views/Achat/show.html.twig">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-309">
-          <caret line="45" column="58" lean-forward="false" selection-start-line="45" selection-start-column="0" selection-end-line="46" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/BackendBundle/Entity/Fournisseur.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="136">
-          <caret line="8" column="2" lean-forward="false" selection-start-line="8" selection-start-column="2" selection-end-line="8" selection-end-column="2" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/BackendBundle/Form/ProdAchatType.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="85">
-          <caret line="5" column="38" lean-forward="false" selection-start-line="5" selection-start-column="0" selection-end-line="6" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/BackendBundle/Form/EntrepotType.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="119">
-          <caret line="10" column="1" lean-forward="false" selection-start-line="10" selection-start-column="1" selection-end-line="10" selection-end-column="1" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/BackendBundle/Resources/views/Entrepot/addentrepot.html.twig">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="425">
-          <caret line="25" column="21" lean-forward="false" selection-start-line="25" selection-start-column="21" selection-end-line="25" selection-end-column="21" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/BackendBundle/Resources/views/Entrepot/updateentrepot.html.twig">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="408">
-          <caret line="24" column="19" lean-forward="false" selection-start-line="24" selection-start-column="19" selection-end-line="24" selection-end-column="19" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/BackendBundle/Resources/views/Entrepot/listentrepot.html.twig">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1207">
-          <caret line="71" column="4" lean-forward="false" selection-start-line="71" selection-start-column="4" selection-end-line="71" selection-end-column="4" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/BackendBundle/Entity/Product.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/BackendBundle/Entity/Entrepot.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="238">
-          <caret line="117" column="34" lean-forward="false" selection-start-line="117" selection-start-column="34" selection-end-line="117" selection-end-column="34" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/BackendBundle/Repository/VehiculeRepository.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="221">
           <caret line="13" column="0" lean-forward="false" selection-start-line="13" selection-start-column="0" selection-end-line="13" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1651,31 +2020,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/Resources/views/fournisseur/index.html.twig">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="374">
-          <caret line="22" column="87" lean-forward="false" selection-start-line="22" selection-start-column="47" selection-end-line="22" selection-end-column="87" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/BackendBundle/Resources/views/Delivery/AfficheD.html.twig">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="289">
           <caret line="17" column="20" lean-forward="false" selection-start-line="17" selection-start-column="20" selection-end-line="17" selection-end-column="20" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/BackendBundle/Resources/config/routing.yml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="319">
-          <caret line="253" column="0" lean-forward="false" selection-start-line="253" selection-start-column="0" selection-end-line="253" selection-end-column="20" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/config/security.yml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="187">
-          <caret line="11" column="8" lean-forward="false" selection-start-line="11" selection-start-column="7" selection-end-line="11" selection-end-column="26" />
         </state>
       </provider>
     </entry>
@@ -1690,7 +2038,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="27">
           <caret line="20" column="40" lean-forward="false" selection-start-line="20" selection-start-column="40" selection-end-line="20" selection-end-column="40" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1705,7 +2052,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="428">
           <caret line="49" column="83" lean-forward="false" selection-start-line="49" selection-start-column="83" selection-end-line="49" selection-end-column="83" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1713,20 +2059,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="17">
           <caret line="1" column="0" lean-forward="false" selection-start-line="1" selection-start-column="0" selection-end-line="1" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/Resources/views/AgentGestionnaire.html.twig">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="34">
-          <caret line="2" column="0" lean-forward="false" selection-start-line="2" selection-start-column="0" selection-end-line="5" selection-end-column="15" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/Resources/views/AgentTransport.html.twig">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="408">
-          <caret line="24" column="15" lean-forward="false" selection-start-line="24" selection-start-column="15" selection-end-line="24" selection-end-column="15" />
         </state>
       </provider>
     </entry>
@@ -1748,9 +2080,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="68">
           <caret line="4" column="0" lean-forward="false" selection-start-line="4" selection-start-column="0" selection-end-line="12" selection-end-column="58" />
-          <folding>
-            <element signature="e#38#78#0#PHP" expanded="false" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1758,15 +2087,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="449">
           <caret line="40" column="16" lean-forward="false" selection-start-line="40" selection-start-column="16" selection-end-line="40" selection-end-column="16" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/BackendBundle/Form/StockType.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="101">
-          <caret line="6" column="41" lean-forward="false" selection-start-line="6" selection-start-column="0" selection-end-line="7" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1774,28 +2094,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="663">
           <caret line="45" column="15" lean-forward="false" selection-start-line="45" selection-start-column="15" selection-end-line="45" selection-end-column="15" />
-          <folding>
-            <element signature="e#38#78#0#PHP" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/BackendBundle/Controller/AchatController.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="274">
-          <caret line="45" column="31" lean-forward="false" selection-start-line="45" selection-start-column="31" selection-end-line="45" selection-end-column="31" />
-          <folding>
-            <marker date="1586469181959" expanded="true" signature="2959:3096" ph="SELECT DATE_... achat" />
-            <marker date="1586469181959" expanded="true" signature="3122:3221" ph="SELECT clien... achat" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/Resources/views/fournisseur/new.html.twig">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="272">
-          <caret line="16" column="115" lean-forward="false" selection-start-line="16" selection-start-column="37" selection-end-line="16" selection-end-column="115" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1803,7 +2101,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1811,15 +2108,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="272">
           <caret line="16" column="16" lean-forward="false" selection-start-line="16" selection-start-column="16" selection-end-line="16" selection-end-column="16" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/BackendBundle/Controller/DeliveryController.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="238">
-          <caret line="19" column="0" lean-forward="false" selection-start-line="19" selection-start-column="0" selection-end-line="19" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1827,7 +2115,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="258">
           <caret line="52" column="18" lean-forward="false" selection-start-line="52" selection-start-column="18" selection-end-line="52" selection-end-column="18" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1835,7 +2122,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="119">
           <caret line="7" column="0" lean-forward="false" selection-start-line="7" selection-start-column="0" selection-end-line="7" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1843,36 +2129,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/composer.json">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="119">
-          <caret line="7" column="21" lean-forward="false" selection-start-line="7" selection-start-column="21" selection-end-line="7" selection-end-column="21" />
-          <folding>
-            <marker date="1586895765417" expanded="true" signature="0:2596" ph="{&quot;name&quot;: &quot;symfony/framework-standard-edition&quot;...}" />
-            <marker date="1586895765417" expanded="true" signature="499:1216" ph="{&quot;php&quot;: &quot;&gt;=5.5.9&quot;...}" />
-            <marker date="1586895765417" expanded="true" signature="1237:1328" ph="{&quot;sensio/generator-bundle&quot;: &quot;^3.0&quot;...}" />
-            <marker date="1586895765417" expanded="true" signature="1345:2076" ph="{...}" />
-            <marker date="1586895765417" expanded="true" signature="1374:1927" ph="[...]" />
-            <marker date="1586895765417" expanded="true" signature="1957:1999" ph="[...]" />
-            <marker date="1586895765417" expanded="true" signature="2028:2070" ph="[...]" />
-            <marker date="1586895765417" expanded="true" signature="2092:2187" ph="{&quot;sort-packages&quot;: true...}" />
-            <marker date="1586895765417" expanded="true" signature="2114:2150" ph="{&quot;php&quot;: &quot;5.6&quot;...}" />
-            <marker date="1586895765417" expanded="true" signature="2202:2594" ph="{&quot;symfony-app-dir&quot;: &quot;app&quot;...}" />
-            <marker date="1586895765417" expanded="true" signature="2456:2515" ph="{&quot;file&quot;: &quot;app/config/parameters.yml&quot;...}" />
-            <marker date="1586895765417" expanded="true" signature="2541:2588" ph="{&quot;dev-master&quot;: &quot;3.4-dev&quot;...}" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/AppKernel.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="98">
-          <caret line="16" column="64" lean-forward="false" selection-start-line="16" selection-start-column="64" selection-end-line="16" selection-end-column="64" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1880,33 +2136,243 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-89">
           <caret line="44" column="71" lean-forward="false" selection-start-line="44" selection-start-column="71" selection-end-line="44" selection-end-column="71" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/composer.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="918">
+          <caret line="54" column="6" lean-forward="false" selection-start-line="54" selection-start-column="6" selection-end-line="54" selection-end-column="6" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/BackendBundle/Controller/DeliveryController.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1173">
+          <caret line="74" column="25" lean-forward="false" selection-start-line="74" selection-start-column="25" selection-end-line="74" selection-end-column="25" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/AppKernel.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="319">
+          <caret line="29" column="0" lean-forward="false" selection-start-line="29" selection-start-column="0" selection-end-line="29" selection-end-column="0" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/BackendBundle/Controller/ReclamationController.php">
+    <entry file="file://$PROJECT_DIR$/src/BackendBundle/Entity/Task.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="319">
-          <caret line="25" column="5" lean-forward="false" selection-start-line="25" selection-start-column="5" selection-end-line="25" selection-end-column="5" />
-          <folding>
-            <element signature="e#44#81#0#PHP" expanded="true" />
-          </folding>
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/BackendBundle/Resources/views/Reclamation/adminManager.html.twig">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="221">
-          <caret line="13" column="38" lean-forward="false" selection-start-line="13" selection-start-column="38" selection-end-line="13" selection-end-column="38" />
-          <folding />
+        <state relative-caret-position="246">
+          <caret line="45" column="15" lean-forward="false" selection-start-line="45" selection-start-column="15" selection-end-line="45" selection-end-column="15" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/BackendBundle/Controller/ReclamationController.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="187">
+          <caret line="130" column="26" lean-forward="false" selection-start-line="130" selection-start-column="26" selection-end-line="130" selection-end-column="26" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/config/config.yml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="166">
-          <caret line="130" column="1" lean-forward="false" selection-start-line="130" selection-start-column="1" selection-end-line="130" selection-end-column="1" />
+        <state relative-caret-position="2210">
+          <caret line="130" column="3" lean-forward="false" selection-start-line="130" selection-start-column="3" selection-end-line="130" selection-end-column="3" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/BackendBundle/Entity/Paiement.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/BackendBundle/Repository/FactureRepository.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="221">
+          <caret line="13" column="0" lean-forward="false" selection-start-line="13" selection-start-column="0" selection-end-line="13" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/config/security.yml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="221">
+          <caret line="13" column="0" lean-forward="false" selection-start-line="13" selection-start-column="0" selection-end-line="13" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/BackendBundle/Form/PaiementType.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="425">
+          <caret line="25" column="11" lean-forward="false" selection-start-line="21" selection-start-column="33" selection-end-line="25" selection-end-column="11" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/Resources/views/paiement/edit.html.twig">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="272">
+          <caret line="16" column="9" lean-forward="true" selection-start-line="0" selection-start-column="0" selection-end-line="25" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/Resources/views/paiement/index.html.twig">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="18" lean-forward="true" selection-start-line="0" selection-start-column="0" selection-end-line="1" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/Resources/views/paiement/new.html.twig">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="16" selection-end-column="14" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/Resources/views/fournisseur/new.html.twig">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="272">
+          <caret line="16" column="115" lean-forward="false" selection-start-line="16" selection-start-column="37" selection-end-line="16" selection-end-column="115" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/Resources/views/paiement/show.html.twig">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="203">
+          <caret line="38" column="59" lean-forward="false" selection-start-line="38" selection-start-column="59" selection-end-line="38" selection-end-column="82" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/Resources/views/AgentGestionnaire.html.twig">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="34">
+          <caret line="2" column="0" lean-forward="false" selection-start-line="2" selection-start-column="0" selection-end-line="5" selection-end-column="15" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/Resources/views/AgentTransport.html.twig">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="102">
+          <caret line="6" column="1" lean-forward="false" selection-start-line="6" selection-start-column="1" selection-end-line="24" selection-end-column="15" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/BackendBundle/Resources/config/routing/paiement.yml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="170">
+          <caret line="10" column="0" lean-forward="false" selection-start-line="10" selection-start-column="0" selection-end-line="10" selection-end-column="12" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/Resources/views/AgentFinancier.html.twig">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="170">
+          <caret line="10" column="17" lean-forward="false" selection-start-line="10" selection-start-column="17" selection-end-line="10" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/Resources/views/fournisseur/index.html.twig">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="374">
+          <caret line="22" column="27" lean-forward="false" selection-start-line="22" selection-start-column="0" selection-end-line="23" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/BackendBundle/Form/StockType.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="102">
+          <caret line="6" column="36" lean-forward="false" selection-start-line="6" selection-start-column="0" selection-end-line="7" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/Resources/views/facture/new.html.twig">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="85">
+          <caret line="5" column="23" lean-forward="false" selection-start-line="5" selection-start-column="23" selection-end-line="5" selection-end-column="23" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/Resources/views/facture/edit.html.twig">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="238">
+          <caret line="14" column="34" lean-forward="false" selection-start-line="14" selection-start-column="34" selection-end-line="14" selection-end-column="34" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/BackendBundle/Form/FactureType.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="232">
+          <caret line="52" column="44" lean-forward="false" selection-start-line="52" selection-start-column="44" selection-end-line="52" selection-end-column="44" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/BackendBundle/Controller/AchatController.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="221">
+          <caret line="13" column="29" lean-forward="false" selection-start-line="13" selection-start-column="0" selection-end-line="14" selection-end-column="0" />
+          <folding>
+            <marker date="1586469181959" expanded="true" signature="2959:3096" ph="SELECT DATE_... achat" />
+            <marker date="1586469181959" expanded="true" signature="3122:3221" ph="SELECT clien... achat" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/Resources/views/fournisseur/show.html.twig">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="510">
+          <caret line="30" column="21" lean-forward="false" selection-start-line="7" selection-start-column="16" selection-end-line="30" selection-end-column="21" />
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/Resources/views/facture/show.html.twig">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="799">
+          <caret line="47" column="17" lean-forward="false" selection-start-line="8" selection-start-column="12" selection-end-line="47" selection-end-column="17" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/BackendBundle/Resources/config/routing.yml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="2482">
+          <caret line="146" column="0" lean-forward="false" selection-start-line="146" selection-start-column="0" selection-end-line="146" selection-end-column="20" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/Resources/views/facture/index.html.twig">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="629">
+          <caret line="37" column="70" lean-forward="false" selection-start-line="37" selection-start-column="70" selection-end-line="37" selection-end-column="70" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/BackendBundle/Resources/views/Facture/pdf.html.twig">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="390">
+          <caret line="77" column="9" lean-forward="true" selection-start-line="77" selection-start-column="9" selection-end-line="77" selection-end-column="9" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/BackendBundle/Controller/FactureController.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="17">
+          <caret line="99" column="11" lean-forward="false" selection-start-line="99" selection-start-column="11" selection-end-line="99" selection-end-column="11" />
+          <folding>
+            <element signature="e#44#77#0#PHP" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>

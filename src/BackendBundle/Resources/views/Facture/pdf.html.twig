@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+
+</head>
+<body>
+<div class="container">
+    <nav class="navbar navbar-light bg-light justify-content-between">
+        <div>
+            <p style="font-size: 50px;">
+                <strong>The maze</strong>
+            </p>
+        </div>
+
+        <div>
+            <p>(+216)53727298</p>
+            <p>Email: brahimhm470@gmail.com</p>
+        </div>
+
+    </nav>
+
+</div>
+
+<h4>Detail de Achat</h4>
+<table border="1" class="table table-hover table-bordered" id="dataTables-example">
+    <tr>
+        <th>Id</th>
+        <td>{{ facture.id }}</td>
+    </tr>
+    <tr>
+        <th>Reference</th>
+        <td>{{ facture.reference }}</td>
+    </tr>
+    <tr>
+        <th>Clientname</th>
+        <td>{{ facture.clientName }}</td>
+    </tr>
+    <tr>
+        <th>Clienttype</th>
+        <td>{{ facture.clientType }}</td>
+    </tr>
+    <tr>
+        <th>Typefacture</th>
+        <td>{{ facture.typeFacture }}</td>
+    </tr>
+    <tr>
+        <th>Statutfacture</th>
+        <td>{{ facture.statutFacture }}</td>
+    </tr>
+    <tr>
+        <th>Totalht</th>
+        <td>{{ facture.totalHT }}</td>
+    </tr>
+    <tr>
+        <th>Totalttc</th>
+        <td>{{ facture.totalTTC }}</td>
+    </tr>
+    <tr>
+        <th>Echeance</th>
+        <td>{{ facture.echeance }}</td>
+    </tr>
+    <tr>
+        <th>Datefact</th>
+        <td>{% if facture.dateFact %}{{ facture.dateFact|date('Y-m-d H:i:s') }}{% endif %}</td>
+    </tr>
+</table>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery.qrcode/1.0/jquery.qrcode.min.js"></script>
+
+
+
+<div id="qrcode" style="height: 60px; width: 60px;"></div>
+<script>
+    $('#qrcode').qrcode("this plugin is great");
+
+</script>
+</body>
+</html>

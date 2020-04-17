@@ -35,14 +35,27 @@
             {% endfor %}
 
         </table>
-    </div>
-<div class="container" style="margin-top: 20px">
+        <h2>Listes des taches</h2>
+        <table class="table table-bordered" style="margin-top: 1.4rem;">
+            <thead class="thead-light">
 
-    <ul class="list-group">
-        <li class="list-group-item disabled">List des tasks</li>
-        {% for task in tasks %}
-        <li class="list-group-item">{{ task.description }}</li>
-        {% endfor %}
-    </ul>
-</div>
+            <tr>
+                <th>Description</th>
+                <th>Date</th>
+            </tr>
+            </thead>
+            {% for task in tasks %}
+            <tr>
+                <td>
+                    {{ task.description }}
+                </td>
+                <td>
+                    {{ task.date|date }}
+                </td>
+            </tr>
+           {% endfor %}
+
+
+        </table>
+    </div>
 {% endblock %}

@@ -1,0 +1,24 @@
+paiement_index:
+    path:     /
+    defaults: { _controller: "BackendBundle:Paiement:index" }
+    methods:  GET
+
+paiement_show:
+    path:     /{id}/show
+    defaults: { _controller: "BackendBundle:Paiement:show" }
+    methods:  GET
+
+paiement_new:
+    path:     /new
+    defaults: { _controller: "BackendBundle:Paiement:new" }
+    methods:  [GET, POST]
+
+paiement_edit:
+    path:     /{id}/edit
+    defaults: { _controller: "BackendBundle:Paiement:edit" }
+    methods:  [GET, POST]
+
+paiement_delete:
+    path:     /{id}/delete
+    defaults: { _controller: "BackendBundle:Paiement:delete" }
+    methods:  DELETE

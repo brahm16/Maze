@@ -81,11 +81,10 @@ class DeliveryController extends Controller
         $deliverys=$em->getRepository('BackendBundle:Delivery')->findAll();
         $writer = $this->container->get('egyg33k.csv.writer');
         $csv = $writer::createFromFileObject(new \SplTempFileObject());
-        $csv->insertOne(['Reference', 'Client Name', 'Driver Name']);
-
+        $csv->insertOne(['Reference',";", 'Client Name',";", 'Driver Name']);
         foreach ($deliverys as $d)
         {
-            $csv->insertOne([$d->getReference(), $d->getClientName(), $d->getDriverName()]);
+            $csv->insertOne([$d->getReference(),";", $d->getClientName(),";", $d->getDriverName()]);
         }
         $csv->output('delivery.csv');
         die('export');
